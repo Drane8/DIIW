@@ -58,7 +58,7 @@ article.flotar-imagen-2lados img.derecha {
     width: 70%;
     border: solid 0.2em green;
     text-align: justify;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .flotar-elementos aside {
