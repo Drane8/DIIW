@@ -1,0 +1,77 @@
+<!--Daniel García-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tabla</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <main>
+        <h1>Horario Escolar</h1>
+    </main>
+    <table border="1px solid black" summary="Tabla con el horario escolar, tiene 6 columnas y 8 filas">
+        <caption>Horario 2ºDAW curso 19/20</caption>
+        <thead>
+            <tr>
+                <th id="vacio"></th>
+				<th id="Lunes">Lunes</th>
+				<th id="Martes">Martes</th>
+				<th id="Miércoles">Miércoles</th>
+				<th id="Jueves">Jueves</th>
+				<th id="Viernes">Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th id="hora1" scope="row" abbr="de 8 y 30 a 9 y 25">8:30 - 9:25</th>
+                <td header="lunes hora1 hora2" rowspan="2">DWEC</td>
+                <td header="martes hora1 hora2 " rowspan="2">DWEC</td>
+                <td header="miercoles hora1 hora2" rowspan="2">DWES</td>
+                <td header="jueves hora1" >DWES</td>
+                <td header="viernes hora1">DIIW</td>
+            </tr>
+            <tr>
+                <th id="hora2" scope="row" abbr="de 9 y 25 a 10 y 20">9:25 - 10:20</th>
+                <td header="jueves hora2" >DWEC</td>
+                <td header="viernes hora2">DEAW</td>
+            </tr>
+            <tr>
+                <th id="hora3" scope="row" abbr="de 10 y 20 a 1 y 15">10:20 - 11:15</th>
+                <td header="lunes hora3">DWEC</td>
+                <td header="martes hora3">DIIW</td>
+                <td header="miercoles hora3">DEAW</td>
+                <td header="jueves hora3">EIDW</td>
+                <td header="viernes hora3">DWES</td>
+            </tr>
+            <tr>
+                <th id="recreo" scope="row" abbr="de 1 y 15 a 11 y 45">11:15 - 11:45</th>
+                <td header="recreo" colspan="5">RECREO</td>
+            </tr>
+            <tr>
+                <th id="hora4" scope="row" abbr="de 11 y 45 a 12 y 40">11:45 - 12:40</th>
+                <td header="lunes hora4">DWES</td>
+                <td header="martes hora4">EIDW</td>
+                <td header="miercoles hora4">DWEC</td>
+                <td header="jueves hora4">IDW</td>
+                <td header="viernes hora4">DWEC</td>
+            </tr>
+            <tr>
+                <th id="hora5" scope="row" abbr="de 12 y 40 a 13 y 35">12:40 - 13:35</th>
+                <td header="lunes hora5 hora6" rowspan="2">DIIW</td>
+                <td header="martes hora5 hora6" rowspan="2">DWES</td>
+                <td header="miercoles hora5 hora6" rowspan="2">DIIW</td>
+                <td header="jueves hora5 hora6" rowspan="2">DEAW</td>
+                <td header="viernes hora5">IDW</td>
+            </tr>
+            <tr>
+                <th id="hora6" scope="row" abbr="de 13 y 35 a 14 y 30">13:35 - 14:30</th>
+                <td header="viernes hora6">EIDW</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

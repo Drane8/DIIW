@@ -1,0 +1,101 @@
+/*Daniel García*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 98%;
+    margin: 0 auto;
+}
+
+header>h1 {
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 2rem 0;
+    padding: 1rem 0;
+    letter-spacing: 0.4rem;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+section {
+    background-color: antiquewhite;
+    border: double black 5px;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+section>p:first-letter {
+    font-size: 3rem;
+    color: red
+}
+
+section>p.flotar-caracter:first-letter {
+    font-size: 3rem;
+    color: red;
+    float: left;
+}
+
+article{
+    margin: 0.7rem;
+    overflow: hidden;
+}
+
+article.flotar-imagen1 img, article.flotar-imagen-2lados img {
+    float: left;
+}
+
+article.flotar-imagen-2lados img.derecha {
+    float: right;
+}
+
+.flotar-elementos div {
+    float: left;
+    width: 70%;
+    border: solid 0.2em green;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.flotar-elementos aside {
+    float: left;
+    border: solid 0.2em yellow;
+    width: 30%;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.flotar-elementos>footer {
+    clear: both;
+    text-align: center;
+    font-style: italic
+}
+
+.flotar-elementos ul {
+    list-style-type: none;
+}
+
+.flotar-elementos header {
+    border: dashed black 2px;
+    overflow: hidden;
+}
+
+.flotar-elementos header li {
+    float: left;
+    display: block;
+    padding: 0.2rem 1rem;
+    margin-right: 1rem;
+    background-color: pink;
+}
+
+nav.migas {
+    font-size: 0.8rem;
+}
+
+nav.migas li, nav.migas ul {
+    display: inline;
+}

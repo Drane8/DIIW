@@ -1,0 +1,76 @@
+/*Daniel García*/
+@font-face {
+    /*nombre de la familia, el que luego se utiliza en el Css*/
+    font-family: 'Noto Sans';
+   /*ubicación de los archivos de las fuentes, en todos los formatos posibles. Puede ser una ubicación en local o una URL.
+   */
+     src:url('fonts/NotoSans-Regular.ttf');  
+    /*grosor de la fuente*/  
+    font-weight: normal;
+    /*tamaño de la fuente */
+    font-style: normal;
+   }
+   
+* {
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+.hidden {
+    position: absolute;
+    top:-32000px;
+}
+header {
+    background-color: orange;
+    font-weight: bold;
+    height: 130px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    text-align: center
+}
+nav{
+    background-color: rgb(190, 190, 3);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+main {
+    background-color: darkslategray;
+    border-radius: 5px;
+    width: 80%;
+    padding: 0.3em;
+    margin: 0.3em;
+    float: left;
+}
+article {
+    background-color: mediumaquamarine;
+    border-radius: 5px;
+    width: 45%;
+    padding: 0.3em;
+    margin: 0.3em;
+    margin-left: 20px;
+    float: left;
+}
+aside {
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    width: 13%;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+}
+footer {
+    text-align: right;
+    background-color: aqua;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    clear: both;
+}
+address {
+    font-size: 0.7em;
+    text-align: left;
+}

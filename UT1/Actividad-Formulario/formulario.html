@@ -1,0 +1,130 @@
+<!--Daniel García-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formulario HTML5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario HTML5</h1>
+    </header>
+    <main>
+        <form name="primer_formulario" action="">
+            <fieldset>
+                <legend>Datos de usuario</legend>
+
+                <label for="usu">Nombre de usuario: </label>
+                <input id="usu" name="usu" type="text" required="required"><br>
+
+                <label for="ema">Correo electrónico: </label>
+                <input id="ema" name="ema" type="email" autocomplete="on" required="required"><br>
+
+                <label for="pass">Contraseña: </label>
+                <input id="pass" name="pass" type="password" required="required"><br>
+
+            </fieldset>
+            <fieldset>
+                <legend>Datos personales</legend>
+
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" name="nombre" type="text" /><br>
+
+                <label for="apellidos">Apellidos: </label>
+                <input id="apellidos" name="apellidos" type="text" /><br>
+
+                <label for="anno">Fecha de nacimiento: </label>
+                <input name="anno" id="anno" type="date" /><br>
+
+                <label for="idioma">Idioma materno: </label>
+                <select name="idioma" id="idioma">
+                    <optgroup label="Europa">
+                        <option value="es" label=Español>Español</option>
+                        <option value="en" label=Inglés>Inglés</option>
+                        <option value="de" label=Alemán>Alemán</option>
+                        <option value="it" label=Italiano>Italiano</option>
+                        <option value="fr" label=Frances>Frances</option>
+                    </optgroup>
+                    <optgroup label="África">
+                        <option value="ar" label=Arabe>Arabe</option>
+                        <option value="sua" label=Suajili>Suajili</option>
+                        <option value="som" label=Somalí>Somalí</option>
+                        <option value="af" label=Afrikáans>Afrikáans</option>
+                    </optgroup>
+                </select><br>
+
+                <label for="tel">Teléfono movil: </label>
+                <input type="tel" name="tel" id="tel" /><br>
+
+                <label for="comp">Compañía: </label>
+                <input type=text list="comp" />
+                <datalist id="comp" name="comp">
+                    <option value="Vodafone">
+                    <option value="Movistar">
+                    <option value="Orange">
+                    <option value="Yoigo">
+                    <option value="Lowi">
+                </datalist><br>
+
+                <label for="pwb">Página web: </label>
+                <input type=url name="url" value="http://" autocomplete=on id="url" /><br>
+
+                <label for="color">Color favorito: </label>
+                <input type="color" name="color" id="color" alt="Elija un color" /><br>
+
+                <label for="numfav">Numero favorito: </label>
+                <input type=number name=anno min=0 max=99 id="numfav" /><br>
+                <br>
+
+                <label for="altura">Altura: </label>
+                <input type="range" name="altura" min="120" max="240" step="10" id="altura" />
+
+
+                <fieldset>
+                    <legend>Estado civil:</legend>
+
+                    <input type="radio" name="estado" id="sol" value="sol" checked="checked" />
+                    <label for="sol">Soltero/a</label>
+                    <input type="radio" name="estado" id="cas" value="cas" />
+                    <label for="cas">Casado/a</label><br>
+
+                    <input type="radio" name="estado" id="divor" value="divor" />
+                    <label for="divor">Divorciado/a</label>
+                    <input type="radio" name="estado" id="viud" value="viud" />
+                    <label for="viud">Viudo/a</label><br>
+
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Hobbies</legend>
+
+                    <input type="checkbox" id="series" name="series" />
+                    <label for="series">Series</label>
+                    <input type="checkbox" id="pelis" name="pelis" />
+                    <label for="pelis">Peliculas</label>
+                    <input type="checkbox" id="juegos" name="juegos" />
+                    <label for="juegos">Videojuegos</label><br>
+
+                    <input type="checkbox" id="libros" name="libros" />
+                    <label for="libros">Leer</label>
+                    <input type="checkbox" id="moda" name="moda" />
+                    <label for="moda">Moda</label>
+                    <input type="checkbox" id="arte" name="arte" />
+                    <label for="arte">Arte</label>
+
+                </fieldset>
+            </fieldset>
+            <input type="submit" id="enviar" />
+            <input type=reset value="Borrar datos" id="borrar" /></br>
+        </form>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/estilo.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <header>
+        <h1>Posicionamiento flotante</h1>
+    </header>
+    <article>
+        <section>
+            <h2>Posicionamiento flotante de caracteres</h2>
+            <p>Letra capital, la primera letra de un párrafo más grande que las letras del resto del párrafo. Se puede
+                hacer que ocupe una línea, como es este
+                caso, o que ocupe varias líneas del párrafo. En este párrafo el efecto de la letra capital se ha
+                conseguido con el siguiente estilo:
+                <code>#flotar-caracteres > p:first-letter{font-size: 5em; color: red}</code>. Se puede ver que a partir
+                de la primera línea, el resto de líneas
+                siguen un flujo normal, debajo de la primera letra y primera línea del párrafo.</p>
+            <p class="flotar-caracter">Letra capital, la primera letra de un párrafo más grande que las letras del resto
+                del párrafo. Se puede
+                hacer que ocupe una línea,
+                como el párrafo anterior o varias líneas como en este párrafo. En este párrafo el efecto de la letra
+                capital se ha conseguido con el siguiente estilo:
+                <code>#flotar-caracteres &gt; p:first-letter{font-size: 5em; color: red;<strong>float:left</strong>}</code>.
+                Se puede ver que la primera línea así como el resto
+                fluyen desde por toda la parte derecha de la letra y cuando se acaba ese espacio, las líneas continúan
+                debajo de la letra. Esto se consigue
+                añadiendo el código <code>float:left</code> a la <em>primera letra</em>. Letra capital, la primera
+                letra de un párrafo más grande que las letras del resto del párrafo. Se puede hacer que ocupe una línea,
+                como el párrafo anterior o varias líneas como en este párrafo. En este párrafo el efecto de la letra
+                capital se ha conseguido con el siguiente estilo:
+                <code>#flotar-caracteres &gt; p:first-letter{font-size: 5em; color: red;<strong>float:left</strong>}</code>.
+                Se puede ver que la primera línea así como el resto
+                fluyen desde por toda la parte derecha de la letra y cuando se acaba ese espacio, las líneas continúan
+                debajo de la letra. Esto se consigue
+                añadiendo el código <code>float:left</code> a la <em>primera letra</em>.</p>
+        </section>
+        <section>
+            <h2>Posicionamiento de imágenes </h2>
+            <article class="flotar-imagen1">
+                <h3>Texto e imagen a derecha o izquierda</h3>
+                <img src="imagenes/logotipo-GNU.jpg" alt="logotipo GNU" />
+                <p>Etiqueta <code>section</code>con el título <strong>Posicionamiento de imágenes</strong> y dentro
+                    varios artículos. Ahora estamos en el artículo que contiene, <code>h3</code><strong> (Texto e imagen
+                        a derecha o izquierda)</strong>, <code>img</code> y <code>p</code> <strong>(este
+                        párrafo)</strong> en en este orden. Prueba a cambiar el tamaño del navegador para comprobar cómo
+                    fluye el texto al lado de la imagen. El elemento que flota se coloca en el primer hueco a la
+                    izquierda que encuentra, y a partir de ahí (en este caso el párrafo) se pone a su derecha y ocupa el
+                    resto de pantalla hacia la derecha. El tamaño del elemento que flota, no determina el de quien lo
+                    envuelve, es decir, en este caso el tamaño de la imagen no determina el tamaño del artículo que lo
+                    envuelve. Esto lo puedes comprobar con la línea verde que hay debajo, ya que es un borde inferior
+                    del artículo (indicación de donde termina el artículo), y no está por debajo de la imagen. </p>
+            </article>
+            <article class="flotar-imagen-2lados">
+                <h3>Imagen-texto-imagen</h3>
+                <img src="imagenes/logotipo-GNU.jpg" alt="logotipo GNU" />
+                <img class="derecha" src="imagenes/logotipo-GNU.jpg" alt="logotipo GNU" />
+                <p>Aquí tenemos una etiqueta <code>section</code>con el título <strong>Posicionamiento de
+                        imágens</strong> con varios artículos. Este es un
+                    artículo <code>article</code> que tiene una etiqueta <code>h3</code>, <strong>
+                        Imagen-texto-imagen</strong>, dos imágenes <code>img, img</code> ,
+                    y un párrafo<code>p</code> (es párrafo actual), o sea este orden (<code>h3-img-img-p</code>) las
+                    imágenes flotan a izquierda y a derecha
+                    respectivamente. El párrafo no tiene ningún float sino que se coloca en el primer hueco que
+                    encuentra, en este caso el centro o entre
+                    las dos imágenes. Si las imágnes nos quisieran decir algo, y se pudieran "leer" al hilo de lo que
+                    cuenta el párrafo, probablemente la disposición
+                    de las mimsas en el orden indicado no sería el mejor de cada a la accesibilidad. Si el orden natural
+                    de lectura del artículo fuera
+                    <code>img-p-img</code>deberíamos de posicionar los tres elementos con diferente propiedad a
+                    <code>float</code>
+                </p>
+            </article>
+        </section>
+        <section class="flotar-otros-elementos">
+            <h2>Posicionamiento flotante de otros elementos </h2>
+            <article class="flotar-elementos">
+                <header>
+                    <h3>Cabecera con menú de navegación</h3>
+                    <nav>
+                        <ul>
+                            <li>Opcion1</li>
+                            <li>Opcion2</li>
+                            <li>Opcion1</li>
+                            <li>Opcion2</li>
+                        </ul>
+                    </nav>
+                </header>
+                <nav class="migas">Usted está aquí:<ul>
+                        <li><a href="#">Home</a></li> &gt; <li><a href="#">Artículos</a></li> &gt; <li>
+                            <a href="#">Deporte</a></li> &gt; <li>Zapatillas</li>
+                    </ul>
+                </nav>
+                <div>
+                    <p>
+                        Esto es una micropágina cuya cabecera incluye al título <strong>Cabecera con menú de
+                            navegación</strong> y un menú de navegación. Después hay una línea, indicándonos en qué
+                        página estamos, lo que se llama <em>migas de pan</em>.
+                    </p>
+                    <pre>
+<code>
+.flotar-elementos &gt; p {float:left;width: 70%;height:20em;margin:1em; padding:2em; border: solid 0.2em green; text-align: justify}
+.flotar-elementos aside &gt; p{float: left;border: solid 0.2em yellow; width: 15%;height:20em; padding: 1em;margin: 1em}
+.flotar-elementos &gt; footer {clear: both; text-align:center;font-style: italic}
+</code>
+</pre>
+                </div>
+                <aside>
+                    <p>En este lateral, está hecho con el etiqueta <code>aside</code>. Se utiliza para poner algo al
+                        lado del artículo, que no tenga mucho que ver con la página: Enlaces a sitios relacionados,
+                        enlaces a perfiles sociales, publicidad, últimas entradas del blog, etiquetas del blog ......
+                        Esta etiqueta flota a la izquierda.</p>
+                </aside>
+                <footer>Esto es el pie, el cual tiene la propiedad <code>clear:both</code></footer>
+
+            </article>
+        </section>
+    </article>
+</body>
+
+</html>

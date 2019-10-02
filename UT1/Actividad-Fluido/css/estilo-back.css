@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1680px;
+    margin:0;
+    background-color: gray;
+}
+.div1, .div2, .div3{
+    width: 550px;
+    height: 375px;
+    margin: 1px;
+    float:left;
+}
+.img1{
+    background: url("/img/disenio-fluido.jpg") no-repeat yellow center top;
+}
+.img2{
+    background: url("/img/content-is-like-water.jpg") no-repeat yellow center top;
+}
+.div1{
+    background-size: contain;
+}
+.div2{
+    background-size: cover;
+}
+.div3{
+    background-size: auto;
+}

@@ -1,0 +1,63 @@
+/**
+*Daniel García
+**/
+
+body {
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+div {
+    border: dotted pink 10px;
+    text-align: justify;
+    padding: 5px 40px
+}
+
+header {
+    background-color: pink;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+h2 {
+    text-transform: capitalize;
+    text-align: justify;
+    margin-bottom: 0px;
+    word-spacing: 20px;
+}
+
+h2>a {
+    font-size: 0.5em;
+    vertical-align: top;
+}
+
+article>p {
+    text-indent: 50px;
+    margin: 5px;
+    font-size: 0.9em
+}
+
+article>p:first-of-type {
+    text-indent: 0;
+}
+
+article>p:first-of-type::first-letter {
+    font-size: 150%;
+    color: pink;
+}
+
+aside>p {
+    margin: 0;
+    text-indent: 10px;
+    font-size: 0.8em;
+}
+
+footer {
+    text-transform: lowercase;
+    text-align: center;
+    letter-spacing: 10px;
+}

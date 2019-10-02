@@ -1,0 +1,168 @@
+<!--Daniel García-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='estilo.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header id="arriba" tabindex="1">
+        <h1>Hojas de estilo CSS</h1>
+        <nav>
+            <h1>Navegación principal</h1>
+            <ul>
+                <li><a href="#introduccion">Introducción</a></li>
+                <li><a href="#selectores">Selectores</a></li>
+                <li><a href="#estructura">Estructura HTML</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <section>
+            <!--Sección para: Introducción, Aplicación de estilos en selectores y Estructura de un documento HTML(en forma de artículos y cada artículo
+            con sus secciones necesarias)-->
+            <h1>Definición de estilos</h1>
+            <article id="introduccion">
+                <h2>Introducción</h2> <a href="#arriba">Ir arriba</a>
+                <p>Las hojas de estilo están compuestas por una o más reglas aplicadas a un documento HTML. Cada regla
+                    está
+                    compuesta de dos partes: <code>Selector{declaracion; propiedades:valor;}</code></p>
+                <ul>
+                    <li><strong>Selector</strong>: puede ser una etiqueta HTML, una clase definida por el usuario, un
+                        nombre
+                        de identificador o un modo compuesto.</li>
+                    <li><strong>Declaración</strong>: establece las propiedades y valores que definen el estilo.</li>
+                </ul>
+
+            </article>
+
+            <article id="selectores">
+                <h2>Aplicación de estilos en selectores</h2> <a href="#arriba">Ir arriba</a>
+                <section>
+                    <h3>Referencia a una clase</h3>
+                    <p>Esta clase de estilo sólo se aplicaría al tipo de etiqueta o directiva, con un nombre de clase
+                        determinado: <code>Selector.nombreclase{propiedad:valor; propiedad:valor;...}</code></p>
+
+                    <p>En el siguiente ejemplo las clases resaltado y normal, únicamente se aplicarían a párrafos:</p>
+                    <samp><code>p.resaltado{background:blue} 
+                p.normal{background:yellow}</code></samp>
+                </section>
+                <section>
+                    <h3>Definición de una clase</h3>
+                    <p>Podemos definir una clase sin hacer referencia a ningún selector en particular, esto permite
+                        utilizar
+                        la clase en cualquier etiqueta
+                        que admita la aplicación de estilo utilizando el atributo <code>class</code>.</p>
+                    <samp><code>.resaltado{background-color:blue}</code></samp>
+                </section>
+                <section>
+                    <h3>Definición de un estilo con identificador</h3>
+                    <p>También podemos crear un estilo dedicado a un identificador (recomendable que no empiece por un
+                        número):</p>
+                    <samp><code>#ident01{background-color:black}</code></samp>
+                </section>
+                <section>
+                    <h3>Selector universal</h3>
+                    <p>Podemos crear un selec tor que se aplica a todas las etiquetas, mediante el
+                        asterisco,<code> *</code>. En el siguiente ejemplo se dice
+                        que ponga el fondo de todas las etiquetas de color negro:</p>
+                    <samp><code>*{background-color: black}</code></samp>
+                </section>
+                <section>
+                    <h3>Selectior limitado</h3>
+                    <p>Podemos crear un estilo que se aplicaría a una etiqueta, siempre y cuando dependa de otras:</p>
+                    <samp><code>tr td ol{background: black}</code></samp>
+                    <p>Esto significa que el estilo se aplica a etiquetas <code>ol</code> que están dentro de un bloque
+                        <code>td</code> que por su parte
+                        están dentro de un bloque <code>tr</code>. La dependencia es estricta, sin etiquetas intermedias
+                        diferentes a las citadas,
+                        por ejemplo una <code>th</code>.
+                        Atención, no confundir la definición anterior con esta, que significa que el estilo se aplica a
+                        las
+                        tres etiquetas:</p>
+                    <samp><code>Tr, td, ol{background: black}</code></samp>
+                    <p>También es posible codificar el selector universal <code>*</code> para incluir diversas etiquetas
+                        intermedias.</p>
+                    <samp><code>tr * ol{background: black}</code></samp>
+                </section>
+                <section>
+                    <h3>Limitación a un atributo de un selector</h3>
+                    <p>Podemos acotar el alcance de un estilo a un elemento que tenga un atributo determinado con un
+                        valor
+                        específico. Esta es la sintaxis: <code>elemento[atributo="valor" {propiedad:valor;..}</code></p>
+                    <p>Por ejemplo si se quiere definir un estilo para los elementos <code>table </code> que tengan
+                        definido
+                        un atributo <code>border=2</code>:</p>
+                    <samp><code>table[border="2"{width:"100%"</code></samp>
+                    <p>Tambien se puede combinar:</p>
+                    <samp><code>table.cl03[border="2"[color="green"{width:"100%"</code></samp>
+                </section>
+            </article>
+
+            <article id="estructura">
+                <h2>Estructura de un documento HTML</h2> <a href="#arriba">Ir arriba</a>
+                <section>
+                    <h3>Tipos de relaciones</h3>
+                    <p>El elemento HTML es el nodo raíz del cual depende toda la estructura. En la estructura se pueden
+                        diferenciar estos tipos de relaciones:</p>
+                    <ul>
+                        <li>Ancestros y descendientes.</li>
+                        <li>Padres e hijos.</li>
+                        <li>Hermanos.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Selección por jerarquía</h3>
+                    <ul>
+                        <li>Para especificar la relación entre <strong>ancestros y descendientes</strong> los elementos
+                            se
+                            separan por un espacio, puede haber etiquetas intermedias.
+
+                        </li>
+                        <li>Lo mismo pero expresado en relación <strong>padre-hijo</strong>.
+
+                        </li>
+                        <li>Para expresar la relación de <strong>hermanos</strong> se especifican los elementos
+                            separados
+                            por el signo <code>+</code>.
+                            Este código va dirigido a un elemento p que tenga un hermano table.
+                            <samp></samp>
+                        </li>
+                    </ul>
+                    <p>También es posible realizar combinaciones; el siguiente estilo va dirigido sólo a los elementos
+                        <code>table</code> y <code>p</code> que sean hermanos e hijos del padre <code>div</code>.</p>
+                    <samp>
+                        <pre>
+<code>div &gt; table + p {}
+div.c2  li {}
+div.c2 &gt; li {}
+table + p {}</code>
+ </pre>
+                    </samp>
+                </section>
+            </article>
+        </section>
+
+        <aside>
+            <section>
+                <h2>También te puede interesar:</h2>
+                <ul>
+                    <li><a href="http://mosaic.uoc.edu/ac/le/es/index.html" accesskey="a">UOC - Html y css</a></li>
+                    <li><a href="http://www.genbetadev.com/herramientas/hojas-de-estilo-mantenibles-y-documentadas-con-kss"
+                            accesskey="a">GENVETA - Css documentadas</a>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+    </div>
+    <footer>
+        <p>Módulo <strong>Diseño de interfaces web</strong> - CSS</p>
+    </footer>
+</body>
+
+</html>

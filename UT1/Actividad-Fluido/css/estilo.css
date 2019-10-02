@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+article{
+    background-color: blue;
+    float:left;
+    font-size: 2em;
+    width: 80%;
+    padding: 1em;
+}
+aside{
+    background-color: red;
+    float: right;
+    padding: 1em;
+    width: 20%;
+}
+img{
+    width:90%;
+    max-width: 500px;
+    margin: 0 auto;
+    display:block;
+}
