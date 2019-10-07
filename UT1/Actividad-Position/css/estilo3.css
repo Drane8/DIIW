@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+div{
+    width: 90%;
+    margin: 15rem auto;
+}
+ul{
+    position: relative;
+    list-style-type: none;
+    background-color: red;
+}
+ul li{
+    display: inline;
+    border-left: 1px solid black;
+    padding: 0 0.8rem;
+}
+ul li:first-of-type{
+    border:none;
+}
+ul li:nth-child(odd) {
+    position: relative;
+    bottom: 17px;
+}
+ul li:nth-child(even) a {
+    color: white;
+}

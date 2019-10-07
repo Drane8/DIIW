@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    background-color: brown;
+    color: white;
+    width: 160px;
+    position: relative;
+    left: 35%;
+    padding-bottom: 36px;
+}
+h1 span:nth-child(2){
+    position: absolute;
+    right:0;
+}
+h1 span:nth-child(3){
+    position: absolute;
+    top: 36px;
+    left: 0;
+    width: 100%;
+}

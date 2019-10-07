@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+div.contenedor1{
+    background-color: gray;
+    position: relative;
+}
+div.contenido1{
+    background-color: blue;
+    width: 30%;
+    height: 100%;
+}
+div.contenido2{
+    background-color: red;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    left: 70%;
+    top: 0;
+}
