@@ -1,0 +1,39 @@
+/*Daniel García*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+header{
+    background-color: #5E8800;
+    padding: 2rem 0;
+    width:100%;
+    position: fixed;
+}
+main {
+    background-color: #0000FF;
+    width:90%;
+    position: relative;
+    top: 5.125rem;
+    left: 5%;
+    z-index: -1;
+}
+article{
+    background-color: #DAF20F;
+    width: 65%;
+}
+aside{
+    background-color: #808080;
+    width: 25%;
+    position: absolute;
+    left: 75%;
+    top: 2.3125em;
+    bottom:0;
+}
+footer{
+    background-color: #FF6600;
+    padding: 2rem 0;
+    width:100%;
+    position: fixed;
+    bottom: 0;
+}
