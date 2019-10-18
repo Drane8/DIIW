@@ -50,6 +50,12 @@ footer{
     header{
         position:unset;
     }
+    footer{
+        position:unset;
+    }
+    div.movil{
+        position:unset;
+    }
     body{
         width: 80%;
         margin: 0 auto;
