@@ -1,0 +1,27 @@
+/*Daniel García*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    background-color: gainsboro;
+}
+a{
+    width:100%;
+}
+footer>div{
+    position: relative;
+    right:0
+}
+@media all and (min-width: 500px){
+    main > img{
+        content: url("../img/star_wars_TABLET.png");
+    }
+}
+@media all and (min-width: 1000px){
+    main > img{
+        content: url("../img/star_wars_PC.jpg");
+    }
+}
