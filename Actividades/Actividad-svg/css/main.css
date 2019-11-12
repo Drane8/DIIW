@@ -1,0 +1,61 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 95%;
+    margin: 0 auto;
+}
+.cabecera_enlace{
+    position: relative;
+    left: 1em;
+}
+.cabecera{
+    position: relative;
+    overflow: hidden;
+    background:gray;
+}
+.cabecera h1{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.hidden{
+    position: absolute;
+    left: -32000px;
+}
+main{
+    margin: 10px 0;
+}
+article{
+    border:solid black 1px;
+}
+article h2{
+    margin: 1em 0;
+}
+article p{
+    margin-bottom: 0.5em;
+}
+article a.bloque{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+svg{
+    display: block;
+    margin: 0.2em auto;
+}
+
+@media all and (min-width:500px){
+    svg rect{
+        fill:yellow;
+    }
+}
+
+@media all and (min-width:800px){
+    svg rect{
+        fill:green;
+    }
+}

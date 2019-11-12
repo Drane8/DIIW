@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Actividad SVG</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header class="cabecera">
+        <a href="" class="cabecera_enlace">
+            <figure>
+                <picture>
+                    <source media="(min-width: 800px)" srcset="svg/imagen3.svg">
+                    <source media="(min-width: 500px)" srcset="svg/imagen2.svg">
+                    <img src="svg/imagen1.svg" alt="figura svg" />
+                </picture>
+                <figcaption class="hidden">Ir a página principal</figcaption>
+            </figure>
+        </a>
+
+        <h1>Imágenes .svg</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Imagen .svg externa</h2>
+            <p>Podemos agregar una imagen .svg mediante la etiqueta &lt;img&gt; , igual que si fuera una imagen de mapa
+                de bits. Un <strong>inconveniente</strong>que tiene es que no se puede modificar su estilo, color,
+                tamaño, etc</p>
+            <p>El logo es una imagen .svg desde archivo, pero en realidad son tres imágenes diferentes</diferentes>
+            </p>
+
+            <a class="bloque" href="https://www.w3schools.com/graphics/svg_intro.asp">Más información <span
+                    class="hidden">sobre imágenes .svg</span></a>
+        </article>
+        <article>
+            <h2>Imagen svg en el archivo .html mediante la etique svg</h2>
+            <p>Se puede poner una imagen svg mediante su propia etiqueta svg. Tenemos la <strong>ventaja</strong> de que
+                se podrá modificar su estilo desde el css</p>
+            <p>La siguiente imagen está en el archivo .html con la etiqueta &lt;svg&gt;y modificamos su color desde el
+                css</p>
+
+            <svg width="75%" height="150" class="svg">
+                <rect width="100%" height="500%" fill="red" />
+            </svg>
+        </article>
+        <article>
+            <h2>svg a tu gusto</h2>
+            <p>Investiga en los enlaces que te he dado de .svg y haz una imagen a tu gusto, prueba a insertarla en el
+                .html, en archivo externo. Y comprueba, lo mucho que se puede ampliar sin perder nada de resolución</p>
+            <p>Pon tu imagen o imágenes a continuación:</p>
+            <figure>
+                <picture>
+                    <img src="svg/mandalorian.svg" alt="figura svg" />
+                </picture>
+                <figcaption class="hidden">Ir a página principal</figcaption>
+            </figure>
+        </article>
+
+
+    </main>
+</body>
+
+</html>
