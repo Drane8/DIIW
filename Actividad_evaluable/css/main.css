@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DIN.otf');
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DIN-Bold.otf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/D-DIN-Italic.otf');
+    font-style: italic;
+}
+
+body {
+    font-family: 'D-DIN';
+    color: #DDDDDD;
+    background: url("../img/fondo_izquierda_movil.jpg") repeat-y, url("../img/fondo_derecha_movil.jpg") repeat-y;
+    background-color: #151515;
+    background-attachment: fixed, fixed;
+    background-position: top left, top 393px right;
+}
+
+.hidden {
+    position: absolute;
+    left: -32000px;
+}
+
+header {
+    background-color: black;
+}
+
+header>a {
+    display: block;
+    width: 242px;
+    margin: 0 auto;
+    padding: 0.5em 0;
+}
+
+header>a>figure>picture>img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+header>nav {
+    border-top: 1px solid #343434;
+}
+
+ul.migas_pan {
+    border-top: 1px solid #343434;
+    padding: 0.2em 5px;
+    list-style: none;
+    clear: both;
+}
+
+ul.migas_pan li {
+    display: inline;
+    font-size: 0.8em;
+}
+
+ul.migas_pan li+li:before {
+    padding: 2px;
+    content: "/\00a0";
+}
+
+ul.migas_pan li a {
+    color: #3273c5;
+    text-decoration: none;
+}
+
+ul.migas_pan li a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+}
+
+nav>ul {
+    list-style: none;
+}
+
+nav>ul>li {
+    display: inline-block;
+    text-transform: uppercase;
+    border-left: 1px solid #343434;
+    padding: 5px 20px;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color: #AAAAAA;
+    letter-spacing: 1px;
+}
+
+nav>ul>li>a:hover {
+    color: #DDDDDD;
+}
+
+nav>ul>li:nth-child(4) {
+    border-right: 1px solid #343434;
+}
+
+li.pc, li.tablet {
+    position: absolute;
+    left: -3200px;
+}
+
+@media all and (min-width:501px) {
+    li.tablet{
+        position: static;
+    }
+    nav>ul>li:nth-child(4) {
+        border-right: none;
+    }
+    nav>ul>li:nth-child(5) {
+        border-right: 1px solid #343434;
+    }
+}
+
+@media all and (min-width:1001px){
+    li.pc{
+        position: static;
+    }
+    nav>ul>li:nth-child(5) {
+        border-right: none;
+    }
+    nav>ul>li:last-child {
+        border-right: 1px solid #343434;
+    }
+}

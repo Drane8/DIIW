@@ -6,8 +6,9 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>The Mandalorian</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="author" content="Daniel García">
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
-    <script src='main.js'></script>
+    <script src='js/main.js'></script>
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -26,7 +27,6 @@
                 <picture>
                     <source media="(min-width:1000px)" srcset="img/logo.png">
                     <img src="img/logo_movil_tablet.png">
-                    <figcaption>Star Wars</figcaption>
                 </picture>
             </figure>
         </a>
@@ -34,11 +34,11 @@
             <h2 class="hidden">Menu navegacion principal</h2>
             <ul>
                 <li><a href="#">Noticias</a></li>
-                <li><a href="#" class="pc">Videos</a></li>
+                <li class="pc"><a href="#" >Videos</a></li>
                 <li><a href="#">Peliculas</a></li>
                 <li><a href="#">Series</a></li>
-                <li><a href="#" class="tablet">Juegos</a></li>
-                <li><a href="#" class="pc">Comunidad</a></li>
+                <li class="tablet"><a href="#">Juegos</a></li>
+                <li class="pc"><a href="#">Comunidad</a></li>
             </ul>
         </nav>
         <ul class="migas_pan">
@@ -61,21 +61,94 @@
                         autoridad de la Nueva República
                     </p>
             </article>
+            <article id="trailer">
+                <h2 class="hidden">Trailer</h2>
+                <video width="640" height="266" poster="media/The_Mandalorian.jpg" controls>
+                    <source src="media/The_Mandalorian.mp4" type="video/mp4">
+                    <source src="media/The_Mandalorian.ogg" type="video/ogg">
+                    <source src="media/The_Mandalorian.webm" type="video/webm">
+                    <track src="media/The_Mandalorian.vtt" kind="subtitles" srclang="en" label="English">
+                    <track src="media/The_Mandalorian_ESP.vtt" kind="subtitles" srclang="es" label="Spanish">
+                    Tu navegador no soporta video
+                </video>
+                <br>
+                <audio controls>
+                    <source src="media/The_Mandalorian.ogg" type="audio/ogg">
+                    <source src="media/The_Mandalorian.mp3" type="audio/mpeg">
+                    Tu navegador no soporta audio
+                </audio>
+            </article>
             <article id="noticias">
                 <h3>Noticias</h3>
-                <div>
+                <div class="n_principal">
                     <a href="#"><img src="img/noticia_principal.jpeg" /></a>
-                    <a href="#"><h4>Disney + ya esta aqui</h4></a>
+                    <a href="#">
+                        <h4>Disney + ya esta aqui</h4>
+                    </a>
                 </div>
+                <div class="n_secundaria">
+                    <a href="#"><img src="img/noticia1.jpeg" /></a>
+                    <a href="#">
+                        <h4>Todo lo que sabemos de The Mandalorian hasta ahora</h4>
+                    </a>
+                </div>
+                <div class="n_secundaria">
+                    <a href="#"><img src="img/noticia2.jpeg" /></a>
+                    <a href="#">
+                        <h4>6 cosas que nos fascinan del ultimo trailer</h4>
+                    </a>
+                </div>
+                <div class="n_secundaria">
+                    <a href="#"><img src="img/noticia3.jpeg" /></a>
+                    <a href="#">
+                        <h4>Nuevos posters de The Mandalorian</h4>
+                    </a>
+                </div>
+            </article>
+            <article id="disney_plus">
+                <a href="#">
+                    <img src="img/suscripcion.jpeg">
+                    <img src="img/disney.png">
+                </a>
+                <div>
+                    <a href=#>
+                        <h3>Ya esta aqui The Mandalorian</h3>
+                    </a>
+                    <a href="#" class="button">Empezar a ver</a>
+                </div>
+            </article>
+            <article id="galeria">
+                <div id="principal">
+                    <img src="img/personaje_05.jpeg">
+                    <h3>Galeria de imagenes</h3>
+                </div>
+                <ul id="galeria_imagenes">
+                    <li><img src="img/personaje_02.jpeg"></li>
+                    <li><img src="img/personaje_03.jpeg"></li>
+                    <li><img src="img/personaje_04.jpeg"></li>
+                    <li><img src="img/personaje_01.jpeg"></li>
+                </ul>
             </article>
         </section>
     </main>
 
     <footer>
-        <div>
+        <div id="sociales">
+            <a href="#" alt="facebook" title="facebook" class="fb">Facebook</a>
+            <a href="#" alt="twitter" title="twitter" class="twitter">Twitter</a>
+            <a href="#" alt="instagram" title="instagram" class="inst">Instagram</a>
+        </div>
+        <div id="autor">
+            <img class="casco" src="img/mandalorian.svg" alt="figura svg" />
+            <address>Pagina creada por <span>Daniel García</span></address>
+            <img class="casco" src="img/mandalorian.svg" alt="figura svg" />
+        </div>
+        <div id="licencia">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
                     alt="Licencia de Creative Commons" style="border-width:0"
-                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a
+                rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons
+                Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>
         </div>
     </footer>
 </body>
