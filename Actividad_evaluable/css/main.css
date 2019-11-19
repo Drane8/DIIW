@@ -163,7 +163,9 @@ article {
 }
 
 #trailer video {
+    margin-top: 1rem;
     width: 100%;
+    height: 41.5%;
 }
 
 #trailer audio {
@@ -220,15 +222,11 @@ div.n_principal h4 {
 }
 
 div.n_secundaria {
-    height: 110px;
     position: relative;
 }
 
-div.n_secundaria a {
-    height: 0px;
-}
-
 div.n_secundaria img {
+    display: block;
     position: relative;
     width: 40%;
     height: 100%;
@@ -240,8 +238,7 @@ div.n_secundaria:nth-child(odd) img {
 
 div.n_secundaria:nth-child(even) img {
     border-left: 2px solid #3273c5;
-    position: absolute;
-    right: 0;
+    left: 60%;
 }
 
 div.n_secundaria div.titulo {
@@ -381,10 +378,12 @@ footer div#autor span {
     bottom: 12px;
     padding: 0 5px;
 }
-footer div#sociales{
+
+footer div#sociales {
     padding-top: 1rem;
 }
-footer div#sociales a{
+
+footer div#sociales a {
     display: inline-block;
     background: url(../img/rrss.png);
     background-size: 300%;
@@ -392,29 +391,35 @@ footer div#sociales a{
     height: 31px;
     color: transparent;
 }
-footer div#sociales a.twitter{
+
+footer div#sociales a.twitter {
     background-position: 67px 0;
 }
-footer div#sociales a.inst{
+
+footer div#sociales a.inst {
     background-position: 133px 0;
 }
 
-footer div#sociales a:hover{
+footer div#sociales a:hover {
     background-position-y: -29px;
 }
 
-footer div#licencia{
-    width:60%;
+footer div#licencia {
+    width: 60%;
     margin: 0 auto;
     margin-top: 1rem;
     font-size: 0.8rem;
 }
-footer div#licencia a{
+
+footer div#licencia a {
     text-decoration: none;
     color: #AAAAAA;
 }
 
 @media all and (min-width:501px) {
+    body {
+        background-image: url(../img/fondo_izquierda.jpg), url(../img/fondo_derecha.jpg);
+    }
     li.tablet {
         position: static;
     }
@@ -423,6 +428,23 @@ footer div#licencia a{
     }
     nav>ul>li:nth-child(5) {
         border-right: 1px solid #333333;
+    }
+    #sinopsis img {
+        width: 40%;
+        float: left;
+        margin-right: 0.5rem;
+    }
+    #sinopsis h4 {
+        padding-top: 0.5rem;
+    }
+    #galeria div#principal {
+        height: 500px;
+    }
+    #galeria div#principal h3 {
+        padding: 20px;
+    }
+    #galeria ul li {
+        height: 250px;
     }
 }
 
