@@ -21,6 +21,32 @@
     font-style: italic;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.625rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+    font-weight: bold;
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 body {
     font-family: 'D-DIN';
     color: #DDDDDD;
@@ -36,14 +62,18 @@ body {
 }
 
 header {
-    background-color: black;
+    background-color: #000000;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 200;
 }
 
 header>a {
     display: block;
     width: 242px;
     margin: 0 auto;
-    padding: 0.5em 0;
+    padding: 0.5rem 0;
 }
 
 header>a>figure>picture>img {
@@ -52,19 +82,19 @@ header>a>figure>picture>img {
 }
 
 header>nav {
-    border-top: 1px solid #343434;
+    border-top: 1px solid #333333;
 }
 
 ul.migas_pan {
-    border-top: 1px solid #343434;
-    padding: 0.2em 5px;
+    border-top: 1px solid #333333;
+    padding: 0.2rem 5px;
     list-style: none;
     clear: both;
 }
 
 ul.migas_pan li {
     display: inline;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 ul.migas_pan li+li:before {
@@ -92,7 +122,7 @@ nav>ul {
 nav>ul>li {
     display: inline-block;
     text-transform: uppercase;
-    border-left: 1px solid #343434;
+    border-left: 1px solid #333333;
     padding: 5px 20px;
 }
 
@@ -107,7 +137,7 @@ nav>ul>li>a:hover {
 }
 
 nav>ul>li:nth-child(4) {
-    border-right: 1px solid #343434;
+    border-right: 1px solid #333333;
 }
 
 li.pc, li.tablet {
@@ -115,26 +145,295 @@ li.pc, li.tablet {
     left: -3200px;
 }
 
+article {
+    width: 95%;
+    margin: 0 auto;
+}
+
+#sinopsis img {
+    display: block;
+    width: 100%;
+    margin: 0.5rem 0;
+}
+
+#sinopsis p {
+    color: #AAAAAA;
+    margin: 12px 0;
+    line-height: 1.2rem;
+}
+
+#trailer video {
+    width: 100%;
+}
+
+#trailer audio {
+    display: block;
+    width: 50%;
+    height: 32px;
+    margin: 5px auto;
+}
+
+#noticias>h3 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 0.2em 0.4em;
+    border-top: 2px solid rgba(170, 170, 170, 0.25);
+    border-bottom: 2px solid rgba(170, 170, 170, 0.25);
+    margin: 1em 0;
+}
+
+#noticias a {
+    text-decoration: none;
+    color: #dddddd;
+    text-transform: uppercase;
+}
+
+#noticias h4 {
+    display: inline-block;
+}
+
+#noticias a:hover {
+    -webkit-transition: color 175ms;
+    -moz-transition: color 175ms;
+    transition: color 175ms;
+    color: #1786eb;
+}
+
+div.n_principal, div.n_secundaria {
+    background-color: #282727;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+div.n_principal {
+    text-align: center;
+}
+
+div.n_principal img {
+    width: 100%;
+    border-bottom: 2px solid #3273c5;
+}
+
+div.n_principal h4 {
+    margin: 1rem;
+}
+
+div.n_secundaria {
+    height: 110px;
+    position: relative;
+}
+
+div.n_secundaria a {
+    height: 0px;
+}
+
+div.n_secundaria img {
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+
+div.n_secundaria:nth-child(odd) img {
+    border-right: 2px solid #3273c5;
+}
+
+div.n_secundaria:nth-child(even) img {
+    border-left: 2px solid #3273c5;
+    position: absolute;
+    right: 0;
+}
+
+div.n_secundaria div.titulo {
+    width: 60%;
+    position: absolute;
+    top: 0;
+    padding: 1rem;
+}
+
+div.n_secundaria:nth-child(odd) div.titulo {
+    right: 0;
+}
+
+div.n_secundaria:nth-child(even) div.titulo {
+    text-align: right;
+}
+
+div.n_secundaria a:nth-last-child() {
+    width: 60%;
+    position: absolute;
+}
+
+#disney_plus {
+    width: 100%;
+}
+
+#disney_plus a {
+    text-decoration: none;
+}
+
+#disney_plus>div {
+    position: relative;
+    text-align: center;
+}
+
+#disney_plus>div>a>img:nth-child(1) {
+    width: 100%;
+}
+
+#disney_plus>div>a>img:nth-child(2) {
+    width: 25%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+#disney_plus a {
+    color: #DDDDDD;
+}
+
+#disney_plus>div:nth-child(2) {
+    margin: 2rem 0;
+}
+
+#disney_plus h4 {
+    font-style: italic;
+    word-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+#disney_plus .button {
+    display: block;
+    background-color: #3273c5;
+    border-radius: 6px;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 50%;
+    margin: 0.5rem auto;
+}
+
+#disney_plus .button:hover {
+    -webkit-transition: background-color 250ms;
+    -moz-transition: background-color 250ms;
+    transition: background-color 250ms;
+    background-color: #1876e9;
+}
+
+#galeria {
+    overflow: hidden;
+}
+
+#galeria div#principal {
+    background-color: #282727;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    height: 300px;
+    position: relative;
+}
+
+#galeria div#principal img {
+    width: 100%;
+}
+
+#galeria div#principal h3 {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    bottom: 0;
+    background-color: #282727;
+    text-transform: uppercase;
+}
+
+#galeria ul li {
+    display: block;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 130px;
+    margin-bottom: 20px;
+    width: calc(50% - 10px);
+    float: left;
+}
+
+#galeria ul li:nth-child(odd) {
+    margin-right: 20px;
+}
+
+#galeria ul li img {
+    width: 100%;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    padding-bottom: 0.5rem;
+}
+
+footer div#autor img {
+    width: 5%;
+}
+
+footer div#autor span {
+    position: relative;
+    bottom: 12px;
+    padding: 0 5px;
+}
+footer div#sociales{
+    padding-top: 1rem;
+}
+footer div#sociales a{
+    display: inline-block;
+    background: url(../img/rrss.png);
+    background-size: 300%;
+    width: 32px;
+    height: 31px;
+    color: transparent;
+}
+footer div#sociales a.twitter{
+    background-position: 67px 0;
+}
+footer div#sociales a.inst{
+    background-position: 133px 0;
+}
+
+footer div#sociales a:hover{
+    background-position-y: -29px;
+}
+
+footer div#licencia{
+    width:60%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+footer div#licencia a{
+    text-decoration: none;
+    color: #AAAAAA;
+}
+
 @media all and (min-width:501px) {
-    li.tablet{
+    li.tablet {
         position: static;
     }
     nav>ul>li:nth-child(4) {
         border-right: none;
     }
     nav>ul>li:nth-child(5) {
-        border-right: 1px solid #343434;
+        border-right: 1px solid #333333;
     }
 }
 
-@media all and (min-width:1001px){
-    li.pc{
+@media all and (min-width:1001px) {
+    li.pc {
         position: static;
     }
     nav>ul>li:nth-child(5) {
         border-right: none;
     }
     nav>ul>li:last-child {
-        border-right: 1px solid #343434;
+        border-right: 1px solid #333333;
     }
 }
