@@ -375,7 +375,7 @@ footer {
 }
 
 footer div#autor img {
-    width: 5%;
+    width: 30px;
 }
 
 footer div#autor span {
@@ -454,6 +454,10 @@ footer div#licencia a {
 }
 
 @media all and (min-width:1001px) {
+    main {
+        max-width: 1250px;
+        margin: 0 auto;
+    }
     li.pc {
         position: static;
     }
@@ -471,6 +475,19 @@ footer div#licencia a {
         position: relative;
         height: 335px;
     }
+    div.n_principal img {
+        min-height: 80%;
+        border: none;
+    }
+    div.n_principal a:nth-child(2) {
+        display: block;
+        position: absolute;
+        width: 100%;
+        background: #282727;
+        bottom: 0;
+        border-top: 2px solid #3273c5;
+        height: 20%;
+    }
     div.secundarias {
         width: 50%;
         height: 350px;
@@ -479,8 +496,24 @@ footer div#licencia a {
         top: 0;
         padding-left: 1em;
     }
+    div.n_secundaria {
+        max-height: 101.39px;
+    }
     ul#galeria_imagenes li {
-        width:33.333333%;
+        width: calc(33.333333% - 13.333333px);
+        margin: 10px 0;
+    }
+    #disney_plus {
+        max-width: 1189.5px;
+    }
+    ul#galeria_imagenes li:nth-child(3n+1) {
+        margin-right: 10px;
+    }
+    ul#galeria_imagenes li:nth-child(3n+2) {
+        margin: 10px 10px;
+    }
+    ul#galeria_imagenes li:nth-child(3n+3) {
+        margin-left: 10px;
         margin-right: 0;
     }
 }
