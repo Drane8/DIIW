@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ejemplos accesibilidad</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <header>
+        <hgroup>
+            <h1>accesibilidad web</h1>
+            <h2>Ejemplos de accesibilidad a diferentes elementos de una Web</h2>
+        </hgroup>
+    </header>
+    <a class="hidden" href="#contenido-principal" accesskey="1">Ir al contenido principal</a>
+    <nav>
+        <h2>Menú de navegación principal</h2>
+        <ul>
+            <li><a href="">Imágenes</a></li>
+            <li><a href="">Enlaces</a></li>
+            <li><a href="">Contenido-Html</a></li>
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <h2>Imágenes accesibles. Tipos de imágenes</h2>
+            <section>
+                <h3>Imágenes decorativas</h3>
+                <figure>
+                    <img src="img/angular.jpg" alt=""/>
+                    <figcaption>Programación de Android desde O.</figcaption>
+                </figure>
+                <ul>
+                    <li><a href="unete.html">Únete</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="siguenos.html">Síguenos</a></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Imagen que transmite información</h3>
+                <img src="img/precuacion.png" alt="Precaucuión"/>
+            </section>
+            <section>
+                <h3>Imagen con información textual</h3>
+                <img src="img/w3c.png" alt="W3C. World Wide Web Consortium"/>
+
+                <p>Teléfono de contacto: <strong>999123456</strong></p>
+            </section>
+            <section>
+                <h3>Imagen como enlace</h3>
+
+                <a href="anterior.html"><img src="img/flecha-izq.gif" alt="Imágen anterior"/></a>
+                <a href="indice.html">Índice de imágenes</a>
+                <a href="siguiente.html"><img src="img/flecha-der.gif" alt="Imágen siguiente"/></a>
+                <p>
+                    Debe<a href=""><img src="img/impresora.jpg" alt="Imprimir"></a>el documento
+                </p>
+
+                <p>
+                    Debe<a href=""><img src="img/impresora.jpg" alt=""/><span>imprimir</span></a> el documento
+                </p>
+            </section>
+
+        </article>
+        <article>
+            <h2>Enlaces</h2>
+            <section>
+                <h3>Usar el propio texto del enlace para describir su propósito</h3>
+                <p>Hubo mucho derramamiento de sangre durante el <a href="">"periodo de la Edad Media"</a>.</p>
+            </section>
+            <section>
+                <h3>Proporcionar una descripción adicional al texto del enlace</h3>
+                <p>Algunos navegadores y algunos programas de ayuda permiten mostrar la lista de enlaces de una página
+                    web. Para que el enlace tenga sentido en esa lista de enlaces, el texto del enlace tiene que tener
+                    sentido fuera de su contexto <a href="">leer más sobre accesibilidad</a></p>
+                <p>La usabilidad web es el grado de facilidad de uso que tiene una página web para los visitantes que
+                    entran e interactúan con ella. <a href="">Leer más sobre usabilidad</a>.</p>
+                <p>El sistema de rejilla de Bootstrap se basa en la creación o disposición del contenido de nuestra web
+                    dentro de rejillas flexibles, las cuales se escalarán al tamaño y posición adecuada de forma
+                    automática dependiendo del tamaño de la pantalla en la que se rendericen.<a href="">Leer más sobre sistema de rejilla</a>.
+                </p>
+            </section>
+        </article>
+        <article id="contenido-principal">
+            <h2>Contenido-Html</h2>
+            <section>
+                <h3>Organización de las páginas</h3>
+                <p>Toda página web debe tener un título descriptivo pero a la vez breve definido con la etiqueta
+                    <code>title </code>que resuma el contenido o la función de la página. Es conveniente incluir el
+                    nombre del sitio web para definir el contexto de la página.
+                </p>
+                <p>Utiliza un único encabezado <code>h1</code> para el título principal de la página web. Utiliza
+                    diferentes encabezados <code>h2</code> para cada apartado principal de la página. Emplea el resto de
+                    encabezados <code>h3...h6</code>para añadir mayor nivel de detalle en la estructura de la página. No
+                    te olvides de <code>hgroup</code>
+                </p>
+            </section>
+            <section>
+                <h3>Elementos repetitivos</h3>
+                <p>Proporciona un método (por ejemplo un enlace "Saltar al contenido" en la parte superior de la página)
+                    que permita saltarse la navegación u otros elementos que se repiten en cada página. Se puede
+                    realizar mediante los atributos <code>accesskey</code> y <code>tabindex</code></p>
+            </section>
+            <section>
+                <h3>Atributos WAI-ARIA</h3>
+                <p>Los landmark roles, se usan para identificar áreas separadas de tu página y transmitir la naturaleza
+                    de la mismas. De esta manera añadimos características útiles de navegación global consistentes, en
+                    cualquier documento (X)HTML, que transmiten información de la estructura de la página e información
+                    semántica sobre estas zonas.
+                </p>
+                <p>Es tan fácil como añadir al elemento contenedor (el “div” por ejemplo) el código
+                    role=”[tipo_landmark]”. Por ejemplo, &gt;div role="main"&lt; para marcar el "div" que contiene la zona de
+                        contenido principal.</p>
+
+            </section>
+            Faltarían añadir dos secciones una poniendo una tabla accesible y otra para un formulario accesible. Lo
+            justo para utilizar las propiedad de tablas y formularios para hacer accesibles a los mismos.
+        </article>
+    </main>
+    <footer>
+        <h2>Declaración de accesibilidad</h2>
+        Nivel de accesibilidad alcanzado, icono que declara el nivel de accesibilidad de tu página
+        <a href="accesibilidad.html">Enlace a la página accesibilidad.html</a>
+        <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
+   title="Explanation of WCAG 2.0 Level Triple-A Conformance">
+  <img height="32" width="88"
+       src="https://www.w3.org/WAI/wcag2AAA"
+       alt="Level Triple-A conformance,
+            W3C WAI Web Content Accessibility Guidelines 2.0">
+</a>
+    </footer>
+
+</body>
+
+</html>

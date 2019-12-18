@@ -1,0 +1,8 @@
+article{
+    float:left;
+    width:50%;
+}
+.hidden{
+    position: absolute;
+    left:-32000px;
+}

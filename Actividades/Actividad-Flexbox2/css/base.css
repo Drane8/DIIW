@@ -1,0 +1,30 @@
+body {
+    background-color: gainsboro;
+}
+
+header {
+    padding: 1em;
+    background-color: #0F0D54;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+}
+
+li {
+    padding: 0.5em;
+}
+
+article {
+    margin: 2em 2em;
+}
+
+address {
+    color: gray;
+    font-size: 0.8em;
+}
+h1, .h1{
+    font-size:24px;
+    font-size:1.5rem;
+}

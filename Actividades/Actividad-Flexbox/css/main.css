@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: gainsboro;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: darkgrey 2px solid;
+    padding: 1em 0;
+}
+nav{
+    border-bottom: 2px black solid;
+}
+nav>ul{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+nav>ul>li{
+    padding:0.5em;
+}
+article>article{
+    width: 50%;
+}
+article#comofunciona{
+    width:100%;
+}
+main>article{
+    display: flex;
+    flex-wrap: wrap;
+}
