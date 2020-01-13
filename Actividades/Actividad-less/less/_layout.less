@@ -1,0 +1,19 @@
+.l-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.l-main {
+  display: flex;
+  flex-direction: column;
+}
+
+@media all and (min-width: @tablet) {
+  .l-main-tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+

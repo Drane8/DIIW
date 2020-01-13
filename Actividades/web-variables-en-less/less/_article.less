@@ -1,0 +1,49 @@
+@media only screen and (min-width: @sm) {
+  /*Al ancho, que es 100% le quito los márgenes
+  en este caso 1% y lo divido entre el número de 
+  artícle de que caben en una fila*/
+  
+  .article--sm{
+    width: 49%; 
+    float:left; 
+  }
+  //los article pares margen izquierdo
+  article:nth-child(even) {
+  margin-left:1%;
+  }
+
+}
+@media only screen and (min-width: @md) {
+  
+  .article--md{
+    width: 32.666%;
+
+  }
+  .article--md:last-child{
+    clear:left;
+  }
+  .article--md:nth-child(odd){
+    margin-left:1%;
+  }
+  .article--md:nth-child(1),
+  .article--md:nth-child(4){
+    margin-left:0%;
+  }
+
+  
+}
+@media only screen and (min-width: @lg) {
+  .article--lg{
+    width: 24.25%;
+  }
+  .article--lg:nth-child(4){
+    margin-left:1%;
+  }
+  .article--lg:last-child{
+    clear:none;
+  }
+}
+
+
+
+

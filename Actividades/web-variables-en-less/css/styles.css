@@ -1,0 +1,175 @@
+/* Reset*/
+html,
+body,
+body div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+body {
+  font-size: 1rem;
+}
+/* fonts */
+/*Base*/
+/*base */
+body {
+  padding: 1.5rem;
+  margin: 0;
+  background-color: #280501;
+}
+article {
+  width: 100%;
+  background-color: #E4E5D3;
+  padding: 0.75rem 0.5rem 1.5rem 0.375rem;
+  margin-top: 1.5rem;
+}
+h1 {
+  color: #E4E5D3;
+  font-size: 2em;
+  margin-bottom: 0.75rem;
+}
+h3 {
+  color: #280501;
+  font-size: 1.3em;
+}
+li {
+  list-style-type: none;
+}
+a:link,
+a:visited {
+  color: #E4E5D3;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #9D9181;
+  padding: 0.75rem;
+  display: inline-block;
+  text-decoration: none;
+}
+/*Article*/
+@media only screen and (min-width: 48em) {
+  /*Al ancho, que es 100% le quito los márgenes
+  en este caso 1% y lo divido entre el número de 
+  artícle de que caben en una fila*/
+  .article--sm {
+    width: 49%;
+    float: left;
+  }
+  article:nth-child(even) {
+    margin-left: 1%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .article--md {
+    width: 32.666%;
+  }
+  .article--md:last-child {
+    clear: left;
+  }
+  .article--md:nth-child(odd) {
+    margin-left: 1%;
+  }
+  .article--md:nth-child(1),
+  .article--md:nth-child(4) {
+    margin-left: 0%;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .article--lg {
+    width: 24.25%;
+  }
+  .article--lg:nth-child(4) {
+    margin-left: 1%;
+  }
+  .article--lg:last-child {
+    clear: none;
+  }
+}
+/*Párrafos*/
+.header__p {
+  color: #9D9181;
+  font-size: 1.6em;
+  margin-bottom: 1.5rem;
+}
+/*Nav*/
+.nav__menu li {
+  display: inline;
+}
