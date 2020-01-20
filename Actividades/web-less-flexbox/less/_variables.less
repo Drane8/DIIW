@@ -1,0 +1,41 @@
+//VARIABLES
+//En relación al color-base, crea otros colores más claros y más oscuros //respecto a ese color para fondos, bordes, links, textos, etc
+@color-base: red;
+@color-base-darker: lighten(@color-base,13%);
+@color-base-dark:  lighten(@color-base,20%);   
+@color-base-lighter: lighten(@color-base,33%); 
+@color-base-light: lighten(@color-base,46%); 
+@color-lighter: lighten(@color-base,93%);
+@brand-primary: gray; 
+ 
+//colores tema1
+@basecolor1: pink; //el color que tú quieras
+@colorfuente1 :spin(@basecolor1, 10); //agrega  x grados al tono del color
+@bordecolor1 :lighten(@basecolor1, 25%);
+ 
+//colores tema2
+@basecolor2:brown; //el color que tú quieras
+@colorfuente2:lighten(@basecolor2 ;40);
+@bordecolor2 :lighten(@basecolor2 ; 50%);
+ 
+//scafoldding: asignamos colores base a fondos, texto , links, etc.
+@body-bg:@color-base;
+@text-color:@color-base-dark;
+@link-color:@brand-primary;
+@link-hover-color:darken(@link-color, 15%);
+ 
+//otras variables que tú creas conveniente
+@anchomaximo:1200px;
+
+@media-tb: 500px;
+@media-pc: 1000px;
+
+@relleno: .5rem;
+@margen: 1rem;
+
+@font-size: 1rem;
+@font-size-h1: @font-size * 1.5;
+@font-size-h2: @font-size * 1.4;
+
+@ancho: 50%;
+ 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Declaración de accesibilidad</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <a class="hidden" href="#sinopsis" accesskey="1">Ir al contenido principal</a>
+    <header>
+        <h1 class="hidden">Star Wars</h1>
+        <a href="#">
+            <figure>
+                <picture>
+                    <source media="(min-width:1000px)" srcset="img/logo.png">
+                    <img src="img/logo_movil_tablet.png" alt="Star Wars">
+                </picture>
+            </figure>
+        </a>
+        <div class="login">
+            <form method="GET" action="#">
+                <input type="text" placeholder="Nombre" name="nom" id="nom"><label for="nom" class="hidden">Nombre</label>
+                <input type="text" placeholder="Password" name="psw" id="psw"><label for="psw" class="hidden">Password</label>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <nav>
+            <h2 class="hidden">Menu navegacion principal</h2>
+            <ul>
+                <li><a href="#">Noticias</a></li>
+                <li class="pc"><a href="#">Videos</a></li>
+                <li><a href="#">Peliculas</a></li>
+                <li><a href="#">Series</a></li>
+                <li class="tablet"><a href="#">Juegos</a></li>
+                <li class="pc"><a href="#">Comunidad</a></li>
+            </ul>
+        </nav>
+        <ul class="migas_pan">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ayuda</a></li>
+            <li>Accesibilidad</li>
+        </ul>
+    </header>
+    <main>
+        <article id="accesibilidad">
+            <h2>Declaración de accesibilidad</h2>
+            <p>
+                Para hacer esta web accesible se han seguido las <a href="https://www.w3.org/TR/WCAG20/">Pautas de
+                    Accesibilidad Web 2.0</a>
+                Algunos aspectos que se han tenido en cuenta son:
+                <ul>
+                    <li>Separar el contenido de la presentación mediante el uso de hojas de estilo</li>
+                    <li>Estructurar y etiquetar correctamente el contenido de la pagina</li>
+                    <li>Utilizar texto significativo enenlaces</li>
+                    <li>Proporcionar texto alternativo a las imagenes que lo necesiten</li>
+                    <li>Outliner correctamente formado</li>
+                    <li>Acceso rapido al contenido principal</li>
+                </ul>
+            </p>
+        </article>
+    </main>
+    <footer>
+        <div id="sociales">
+            <a href="#" title="enlace a Facebook de Star Wars" class="fb">Facebook</a>
+            <a href="#" title="enlace a Twitter de Star Wars" class="twitter">Twitter</a>
+            <a href="#" title="enlace a Instagram de Star Wars" class="inst">Instagram</a>
+        </div>
+        <div id="autor">
+            <address>
+                <img class="casco" src="img/mandalorian.svg" alt="" />
+                <span>Página creada por Daniel García</span>
+                <img class="casco" src="img/mandalorian.svg" alt="" />
+            </address>
+        </div>
+        <div id="licencia">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                    alt="Licencia de Creative Commons" style="border-width:0"
+                    src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a
+                rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons
+                Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>
+        </div>
+        <div id="accesibilidad">
+            <a href="accesibilidad.html">Enlace a la página accesibilidad.html</a>
+            <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
+                title="Explanation of WCAG 2.0 Level Triple-A Conformance"><br />
+                <img height="32" width="88" src="https://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance,
+            W3C WAI Web Content Accessibility Guidelines 2.0">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

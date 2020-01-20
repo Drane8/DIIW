@@ -1,0 +1,50 @@
+.caja-block(@ancho:100%,@relleno: @relleno) {
+  display: block;
+  width: @ancho;
+  padding: @relleno;
+}
+
+.overflow-puntos-suspensivos() {
+  overflow: hidden;
+  //con el valor elipsis aparecen tres puntos suspensivos
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ancho-maximo(@ancho:100%,@anchomaximo:100%,@relleno) {
+  .caja-block(@ancho; @relleno);
+  max-width: @anchomaximo;
+}
+
+.flotar(@lado:left) {
+  float: @lado;
+}
+
+.cuadrado(@lado) {
+  display: block;
+  width: @lado;
+  height: @lado;
+}
+.img-responsive(@display:block) {
+  display: @display;
+  max-width: 100%;
+  height: auto;
+}
+.borde(@color:black;@estilo:dotted;@ancho:2px) {
+  border: @arguments;
+}
+.tema(@fondo:@basecolor1;@color-fuente:@colorfuente1;@bordecolor:@bordecolor1) {
+  background-color: @basecolor1;
+  color: @color-fuente;
+  border-color: @bordecolor;
+}
+
+//mixins para layouts
+.contenedor(@direccion:row;@wrap:nowrap){
+    display: flex;
+    flex-direction: @direccion;
+    flex-wrap: @wrap;
+}
+.columna(@num-columna:1;@justify:flex-start){
+    width: calc(100%/@num-columna);
+    justify-content: @justify;
+}

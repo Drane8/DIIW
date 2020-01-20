@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset='utf-8'>
@@ -19,24 +19,24 @@
 </head>
 
 <body>
-
+    <a class="hidden" href="#sinopsis" accesskey="1">Ir al contenido principal</a>
     <header>
         <h1 class="hidden">Star Wars</h1>
         <a href="#">
             <figure>
                 <picture>
                     <source media="(min-width:1000px)" srcset="img/logo.png">
-                    <img src="img/logo_movil_tablet.png">
+                    <img src="img/logo_movil_tablet.png" alt="Star Wars">
                 </picture>
             </figure>
         </a>
         <div class="login">
-            <form method="GET" action="">
-              <input type="text" placeholder="Nombre" name="nom">
-              <input type="text" placeholder="Password" name="psw">
-              <button type="submit">Login</button>
+            <form method="GET" action="#">
+                <input type="text" placeholder="Nombre" name="nom" id="nom"><label for="nom" class="hidden">Nombre</label>
+                <input type="text" placeholder="Password" name="psw" id="psw"><label for="psw" class="hidden">Password</label>
+                <button type="submit">Login</button>
             </form>
-          </div>
+        </div>
         <nav>
             <h2 class="hidden">Menu navegacion principal</h2>
             <ul>
@@ -58,17 +58,17 @@
     <main>
         <section>
             <h2 class="hidden">The Mandalorian</h2>
-            <article id="sinopsis">
-                <h3 class="hidden">Sinopsis</h2>
-                    <img src="img/poster.jpeg">
-                    <h4>THE MANDALORIAN</h4>
-                    <p>
-                        El mandaloriano tiene lugar después de la caída del Imperio y antes de la aparición de la
-                        Primera Orden y sigue a un pistolero solitario en los confines de la galaxia, lejos de la
-                        autoridad de la Nueva República
-                    </p>
+            <article id="sinopsis" tabindex="0">
+                <h3 class="hidden">Sinopsis</h3>
+                <img src="img/poster.jpeg" alt="">
+                <h4>THE MANDALORIAN</h4>
+                <p>
+                    El mandaloriano tiene lugar después de la caída del Imperio y antes de la aparición de la
+                    Primera Orden y sigue a un pistolero solitario en los confines de la galaxia, lejos de la
+                    autoridad de la Nueva República
+                </p>
             </article>
-            <article id="trailer">
+            <article id="trailer" tabindex="2">
                 <h2 class="hidden">Trailer</h2>
                 <video width="640" height="266" poster="media/The_Mandalorian.jpeg" controls>
                     <source src="media/The_Mandalorian.mp4" type="video/mp4">
@@ -85,18 +85,18 @@
                     Tu navegador no soporta audio
                 </audio>
             </article>
-            <article id="noticias">
+            <article id="noticias" tabindex="3">
                 <h3>Noticias</h3>
                 <div class="noticias">
                     <div class="n_principal">
-                        <a href="#"><img src="img/noticia_principal.jpeg" /></a>
+                        <a href="#"><img src="img/noticia_principal.jpeg" alt="Noticia Disney plus" /></a>
                         <a href="#">
                             <h4>Disney + ya esta aqui</h4>
                         </a>
                     </div>
                     <div class="secundarias">
                         <div class="n_secundaria">
-                            <a href="#"><img src="img/noticia1.jpeg" /></a>
+                            <a href="#"><img src="img/noticia1.jpeg" alt="Noticia curiosidads sobre mandalorian" /></a>
                             <div class="titulo">
                                 <a href="#">
                                     <h4>Todo lo que sabemos de The Mandalorian hasta ahora</h4>
@@ -104,14 +104,14 @@
                             </div>
                         </div>
                         <div class="n_secundaria">
-                            <a href="#"><img src="img/noticia2.jpeg" /></a>
+                            <a href="#"><img src="img/noticia2.jpeg" alt="Noticia trailer de mandalorian" /></a>
                             <div class="titulo"><a href="#">
                                     <h4>6 cosas que nos fascinan del ultimo trailer</h4>
                                 </a>
                             </div>
                         </div>
                         <div class="n_secundaria">
-                            <a href="#"><img src="img/noticia3.jpeg" /></a>
+                            <a href="#"><img src="img/noticia3.jpeg" alt="Noticia posters de mandalorian" /></a>
 
                             <div class="titulo"><a href="#">
                                     <h4>Nuevos posters de The Mandalorian</h4>
@@ -121,11 +121,11 @@
                     </div>
                 </div>
             </article>
-            <article id="disney_plus">
+            <article id="disney_plus" tabindex="4">
                 <div>
                     <a href="#">
-                        <img src="img/suscripcion.jpeg">
-                        <img src="img/disney.png">
+                        <img src="img/suscripcion.jpeg" alt="Suscripcion disney Plus">
+                        <img src="img/disney.png" alt="Disney Plus">
                     </a>
                 </div>
                 <div>
@@ -135,16 +135,16 @@
                     <a href="#" class="button">Empezar a ver</a>
                 </div>
             </article>
-            <article id="galeria">
+            <article id="galeria" tabindex="5">
                 <div id="principal">
-                    <img src="img/personaje_05.jpeg">
+                    <img src="img/personaje_05.jpeg" alt="">
                     <h3>Galeria de imagenes</h3>
                 </div>
                 <ul id="galeria_imagenes">
-                    <li><img src="img/personaje_02.jpeg"></li>
-                    <li><img src="img/personaje_03.jpeg"></li>
-                    <li><img src="img/personaje_04.jpeg"></li>
-                    <li><img src="img/personaje_01.jpeg"></li>
+                    <li><img src="img/personaje_02.jpeg" alt=""></li>
+                    <li><img src="img/personaje_03.jpeg" alt=""></li>
+                    <li><img src="img/personaje_04.jpeg" alt=""></li>
+                    <li><img src="img/personaje_01.jpeg" alt=""></li>
                 </ul>
             </article>
         </section>
@@ -152,15 +152,15 @@
 
     <footer>
         <div id="sociales">
-            <a href="#" alt="facebook" title="facebook" class="fb">Facebook</a>
-            <a href="#" alt="twitter" title="twitter" class="twitter">Twitter</a>
-            <a href="#" alt="instagram" title="instagram" class="inst">Instagram</a>
+            <a href="#" title="enlace a Facebook de Star Wars" class="fb">Facebook</a>
+            <a href="#" title="enlace a Twitter de Star Wars" class="twitter">Twitter</a>
+            <a href="#" title="enlace a Instagram de Star Wars" class="inst">Instagram</a>
         </div>
         <div id="autor">
             <address>
-                <img class="casco" src="img/mandalorian.svg" alt="figura svg" />
+                <img class="casco" src="img/mandalorian.svg" alt="" />
                 <span>Página creada por Daniel García</span>
-                <img class="casco" src="img/mandalorian.svg" alt="figura svg" />
+                <img class="casco" src="img/mandalorian.svg" alt="" />
             </address>
         </div>
         <div id="licencia">
@@ -169,6 +169,14 @@
                     src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a
                 rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons
                 Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>
+        </div>
+        <div id="accesibilidad">
+            <a href="accesibilidad.html">Enlace a la página accesibilidad.html</a>
+            <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
+                title="Explanation of WCAG 2.0 Level Triple-A Conformance"><br/>
+                <img height="32" width="88" src="https://www.w3.org/WAI/wcag2AAA" alt="Level Triple-A conformance,
+            W3C WAI Web Content Accessibility Guidelines 2.0">
+            </a>
         </div>
     </footer>
 </body>

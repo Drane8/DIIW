@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.fila-en-fila {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.fila-en-columna {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.columna1 {
+  width: calc(100%/1);
+  justify-content: flex-start;
+}
+.columna12 {
+  width: calc(100%/12);
+  justify-content: flex-start;
+}
+@media all and (min-width: 500px) {
+  .l-column12-tb {
+    width: calc(100%/1);
+    justify-content: flex-start;
+  }
+}
+.ancho-caja {
+  display: block;
+  width: 50%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+.ocultar-con-puntos {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ancho-maximo {
+  display: block;
+  width: 50%;
+  padding: 0.5rem;
+  max-width: 1000px;
+}
+.flotar-izquireda {
+  float: left;
+}
+.flotar-derecha {
+  float: right;
+}
+.cuadrado {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.borde {
+  border: red dashed 3px;
+}
+.tema1 {
+  background-color: pink;
+  color: #ffc0c0;
+  border-color: #ffffff;
+}
+.tema2 {
+  background-color: pink;
+  color: #ebb0b0;
+  border-color: #f5d9d9;
+}
