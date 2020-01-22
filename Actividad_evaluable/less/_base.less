@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN.otf');
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN-Italic.otf');
+  font-style: italic;
+}
+
+h1 {
+  font-size: @tamanoFuente * 3;
+}
+
+h2 {
+  font-size: @tamanoFuente * 2;
+}
+
+h3 {
+  font-size: @tamanoFuente * 1.625;
+}
+
+h4 {
+  font-size: @tamanoFuente * 1.25;
+}
+
+h5 {
+  font-size: @tamanoFuente * 1.125;
+  font-weight: bold;
+}
+
+h6 {
+  font-size: @tamanoFuente;
+  font-weight: bold;
+}
+
+
+body {
+  font-family: @fuente;
+  color: @color1;
+  .fondo-doble-vertical("../img/fondo_izquierda_movil.jpg","../img/fondo_derecha_movil.jpg",@color-fondo,fixed,fixed,top left, top 393px right,scroll);
+}
+
+header {
+  background-color: @color-fondo2;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+}
+
+
+nav {
+  text-align: center;
+}
+
+
+article {
+  width: 95%;
+  .centrado();
+}
+
+footer {
+  text-align: center;
+  background-color: @color-fondo2;
+  padding-bottom: 0.5rem;
+}
+
+@media all and (min-width:@media-tb) {
+  body {
+      background-image: url(../img/fondo_izquierda.jpg), url(../img/fondo_derecha.jpg);
+  }
+}
+
+@media all and (min-width:@media-pc) {
+  main {
+      max-width: @anchoMax;
+      .centrado();
+  }
+}

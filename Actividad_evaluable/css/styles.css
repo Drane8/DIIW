@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN.otf');
+}
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN-Bold.otf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN-Italic.otf');
+  font-style: italic;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.625rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body {
+  font-family: 'D-DIN';
+  color: #DDDDDD;
+  background: url(" ../img/fondo_izquierda_movil.jpg") repeat-y, url(" ../img/fondo_derecha_movil.jpg") repeat-y;
+  background-color: #151515;
+  background-attachment: fixed, fixed;
+  background-position: top left, top 393px right;
+  overflow-y: scroll;
+}
+header {
+  background-color: black;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+}
+nav {
+  text-align: center;
+}
+article {
+  width: 95%;
+  margin: 0 auto;
+}
+footer {
+  text-align: center;
+  background-color: black;
+  padding-bottom: 0.5rem;
+}
+@media all and (min-width: 501px) {
+  body {
+    background-image: url(../img/fondo_izquierda.jpg), url(../img/fondo_derecha.jpg);
+  }
+}
+@media all and (min-width: 1001px) {
+  main {
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+}
