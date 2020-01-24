@@ -55,7 +55,7 @@ h6 {
     background-attachment: fixed, fixed;
     background-position: top left, top 393px right;
     overflow-y: scroll;
-}*/
+}
 
 .hidden {
     position: absolute;
@@ -69,7 +69,8 @@ h6 {
     top: 0;
     z-index: 200;
 }
-*/
+
+
 header>a {
     display: block;
     width: 242px;
@@ -80,31 +81,6 @@ header>a {
 header>a>figure>picture>img {
     max-width: 100%;
     max-height: 100%;
-}
-
-div.login{
-    text-align: center;
-}
-div.login form input[type=text] {
-    background-color: #282727;
-    border: none;
-    padding: 0.2em;
-    width:120px;
-    color: #AAAAAA
-}
-
-div.login form button {
-    border:none;
-    background-color: #3274c5;
-    border-radius: 6px;
-    padding: 0.2rem 0.8rem;
-    text-transform: uppercase;
-    margin: 0.5rem auto;
-    color: white;
-}
-
-header>nav {
-    border-top: 1px solid #333333;
 }
 
 ul.migas_pan {
@@ -132,11 +108,36 @@ ul.migas_pan li a {
 ul.migas_pan li a:hover {
     text-decoration: underline;
 }
-/*
 nav {
     text-align: center;
 }
-*/
+
+
+div.login{
+    text-align: center;
+}
+div.login form input[type=text] {
+    background-color: #282727;
+    border: none;
+    padding: 0.2em;
+    width:120px;
+    color: #AAAAAA
+}
+
+div.login form button {
+    border:none;
+    background-color: #3274c5;
+    border-radius: 6px;
+    padding: 0.2rem 0.8rem;
+    text-transform: uppercase;
+    margin: 0.5rem auto;
+    color: white;
+}
+
+
+header>nav {
+    border-top: 1px solid #333333;
+}
 nav>ul {
     list-style-type: none;
 }
@@ -166,7 +167,6 @@ li.pc, li.tablet {
     position: absolute;
     left: -3200px;
 }
-/*
 article {
     width: 95%;
     margin: 0 auto;
@@ -458,7 +458,7 @@ footer div#licencia a, footer div#accesibilidad a {
 @media all and (min-width:501px) {
     /*body {
         background-image: url(../img/fondo_izquierda.jpg), url(../img/fondo_derecha.jpg);
-    }*/
+    }
     li.tablet {
         position: static;
     }
@@ -467,7 +467,7 @@ footer div#licencia a, footer div#accesibilidad a {
     }
     nav>ul>li:nth-child(5) {
         border-right: 1px solid #333333;
-    }
+    }*/
     #sinopsis img {
         width: 40%;
         float: left;
@@ -491,7 +491,7 @@ footer div#licencia a, footer div#accesibilidad a {
     /*main {
         max-width: 1250px;
         margin: 0 auto;
-    }*/
+    }
     li.pc {
         position: static;
     }
@@ -500,7 +500,7 @@ footer div#licencia a, footer div#accesibilidad a {
     }
     nav>ul>li:last-child {
         border-right: 1px solid #333333;
-    }
+    }*/
     div.login{
         position: absolute;
     right:0.2rem;

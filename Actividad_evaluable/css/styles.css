@@ -11,6 +11,7 @@
   text-decoration: none;
   list-style-type: none;
 }
+/**********************************************************/
 @font-face {
   font-family: 'D-DIN';
   src: url('../fonts/D-DIN.otf');
@@ -45,6 +46,10 @@ h6 {
   font-size: 1rem;
   font-weight: bold;
 }
+.hidden {
+  position: absolute;
+  left: -32000px;
+}
 body {
   font-family: 'D-DIN';
   color: #DDDDDD;
@@ -56,10 +61,6 @@ body {
 }
 header {
   background-color: black;
-  position: sticky;
-  width: 100%;
-  top: 0;
-  z-index: 200;
 }
 nav {
   text-align: center;
@@ -82,5 +83,111 @@ footer {
   main {
     max-width: 1250px;
     margin: 0 auto;
+  }
+}
+header {
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 200;
+}
+.header__a {
+  display: block;
+  width: 242px;
+  padding: 0.5rem 0;
+  margin: 0 auto;
+}
+.header__a figure picture img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.header__migas {
+  border-top: 1px solid #333333;
+  padding: 0.2rem 5px;
+  list-style-type: none;
+  clear: both;
+}
+.header__migas li {
+  display: inline;
+  font-size: 0.8rem;
+}
+.header__migas li + li:before {
+  padding: 2px;
+  content: "/\00a0";
+}
+.header__migas li a {
+  color: #3273c5;
+  text-decoration: none;
+}
+.header__migas li a:hover {
+  text-decoration: underline;
+}
+.header__login {
+  text-align: center;
+}
+.header__login form input[type=text] {
+  background-color: #282727;
+  border: none;
+  padding: 0.2em;
+  width: 120px;
+  color: #AAAAAA;
+}
+.header__login form button {
+  border: none;
+  background-color: #3274c5;
+  border-radius: 6px;
+  padding: 0.2rem 0.8rem;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  color: white;
+}
+.header__nav {
+  border-top: 1px solid #333333;
+}
+.header__nav > ul {
+  list-style-type: none;
+}
+.header__nav > ul > li {
+  display: inline-block;
+  text-transform: uppercase;
+  border-left: 1px solid #333333;
+  padding: 5px 20px;
+}
+.header__nav > ul > li > a {
+  text-decoration: none;
+  color: #aaaaaa;
+  letter-spacing: 1px;
+}
+.header__nav > ul > li > a:hover {
+  color: #dddddd;
+}
+.header__nav > ul > li:nth-child(4) {
+  border-right: 1px solid #333333;
+}
+.nav__pc,
+.nav__tablet {
+  position: absolute;
+  left: -32000px;
+}
+@media all and (min-width: 501px) {
+  .nav__tablet {
+    position: static;
+  }
+  .header__nav > ul > li:nth-child(4) {
+    border-right: none;
+  }
+  .header__nav > ul > li:nth-child(5) {
+    border-right: 1px solid #333333;
+  }
+}
+@media all and (min-width: 1001px) {
+  .nav__pc {
+    position: static;
+  }
+  .header__nav > ul > li:nth-child(5) {
+    border-right: none;
+  }
+  .header__nav > ul > li:last-child {
+    border-right: 1px solid #333333;
   }
 }

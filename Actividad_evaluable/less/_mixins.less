@@ -10,12 +10,19 @@
   margin: 0 auto;
 }
 
+
 .caja-block(@ancho:100%,@relleno: @relleno) {
   display: block;
   width: @ancho;
   padding: @relleno;
 }
 
+.maximos(@anchomax,@altmax){
+  max-width: @anchomax;
+  max-height: @altmax;
+}
+
+/**********************************************************/
 .overflow-puntos-suspensivos() {
   overflow: hidden;
   //con el valor elipsis aparecen tres puntos suspensivos
