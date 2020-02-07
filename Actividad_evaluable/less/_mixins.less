@@ -1,3 +1,4 @@
+//Creacion de doble fondo
 .fondo-doble-vertical(@url1, @url2, @colorFondo,@attach1,@attach2,@pos1,@pos2,@overflow){
   background: url(" @{url1}") repeat-y, url(" @{url2}") repeat-y;
   background-color: @colorFondo;
@@ -6,10 +7,10 @@
   overflow-y: @overflow;
 }
 
+//Centra elementos
 .centrado(){
   margin: 0 auto;
 }
-
 
 .caja-block(@ancho:100%,@relleno: @relleno) {
   display: block;
@@ -22,48 +23,22 @@
   max-height: @altmax;
 }
 
-/**********************************************************/
-.overflow-puntos-suspensivos() {
-  overflow: hidden;
-  //con el valor elipsis aparecen tres puntos suspensivos
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.ancho-maximo(@ancho:100%,@anchomaximo:100%,@relleno) {
-  .caja-block(@ancho; @relleno);
-  max-width: @anchomaximo;
+//crear flex con el espacio repartido entre los elemntos
+.flex-espaciado(){
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.flotar(@lado:left) {
-  float: @lado;
+//crear una sombra para cajas
+.sombra-caja-simple(@x: 0; @y: 0; @height: 3px; @width: 3px) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
 }
-
-.cuadrado(@lado) {
-  display: block;
-  width: @lado;
-  height: @lado;
-}
-.img-responsive(@display:block) {
-  display: @display;
-  max-width: 100%;
-  height: auto;
-}
-.borde(@color:black;@estilo:dotted;@ancho:2px) {
-  border: @arguments;
-}
-.tema(@fondo:@basecolor1;@color-fuente:@colorfuente1;@bordecolor:@bordecolor1) {
-  background-color: @basecolor1;
-  color: @color-fuente;
-  border-color: @bordecolor;
-}
-
-//mixins para layouts
-.contenedor(@direccion:row;@wrap:nowrap){
-    display: flex;
-    flex-direction: @direccion;
-    flex-wrap: @wrap;
-}
-.columna(@num-columna:1;@justify:flex-start){
-    width: calc(100%/@num-columna);
-    justify-content: @justify;
+//crea una o más sombras para cajas
+ .sombra-caja-multiple(@rest...){
+  -webkit-box-shadow: @rest;
+  -moz-box-shadow: @rest;
+  box-shadow: @rest;
 }

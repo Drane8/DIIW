@@ -20,7 +20,7 @@
 
 <body>
     <a class="hidden" href="#sinopsis" accesskey="1">Ir al contenido principal</a>
-    <header>
+    <header class="l-sticky">
         <h1 class="hidden">Star Wars</h1>
         <a href="#" class="header__a">
             <figure>
@@ -58,17 +58,17 @@
     <main>
         <section>
             <h2 class="hidden">The Mandalorian</h2>
-            <article id="sinopsis" tabindex="0">
+            <article class="article__sinopsis l-fila-tb" tabindex="0">
                 <h3 class="hidden">Sinopsis</h3>
-                <img src="img/poster.jpeg" alt="">
-                <h4>THE MANDALORIAN</h4>
+                <img src="img/poster.jpeg" alt="" class="l-1col-mv l-2col-tb">
+                <div><h4>THE MANDALORIAN</h4>
                 <p>
                     El mandaloriano tiene lugar después de la caída del Imperio y antes de la aparición de la
                     Primera Orden y sigue a un pistolero solitario en los confines de la galaxia, lejos de la
                     autoridad de la Nueva República
-                </p>
+                </p></div>
             </article>
-            <article id="trailer" tabindex="2">
+            <article class="article__trailer" tabindex="2">
                 <h2 class="hidden">Trailer</h2>
                 <video width="640" height="266" poster="media/The_Mandalorian.jpeg" controls>
                     <source src="media/The_Mandalorian.mp4" type="video/mp4">
@@ -85,17 +85,80 @@
                     Tu navegador no soporta audio
                 </audio>
             </article>
-            <article id="noticias" tabindex="3">
+            <article class="article__episodios" tabindex="3">
+                <h3>Lista Episodios</h3>
+                <table summary="Lista episodios de The Mandalorian" id="episodios">
+                    <thead>
+                     <tr>
+                      <th></th>
+                      <th id="episodiosColHdr2" scope="col">Nombre</th>
+                      <th id="episodiosColHdr3" scope="col">Fecha</th>
+                      <th id="episodiosColHdr4" scope="col">Director</th>
+                     </tr>
+                    </thead>
+                    <tbody>
+                     <tr>
+                      <th id="episodiosRowHdr2" scope="row">Episodio 1</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr2">Capítulo Piloto</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr2">12 de noviembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr2">Dave Filoni</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr3" scope="row">Episodio 2</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr3">El niño</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr3">15 de noviembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr3">Rick Famuyiwa</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr4" scope="row">Episodio 3</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr4">El pecado</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr4">22 de noviembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr4">Deborah Chow</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr5" scope="row">Episodio 4</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr5">El santuario</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr5">29 de noviembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr5">Bryce Dallas Howard</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr6" scope="row">Episodio 5</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr6">El pistolero</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr6">6 de dicembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr6">Dave Filoni</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr7" scope="row">Episodio 6</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr7">El prisionero</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr7">13 de diciembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr7">Rick Famuyiwa</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr8" scope="row">Episodio 7</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr8">Ajuste de cuentas</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr8">18 de diciembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr8">Deborah Chow</td>
+                     </tr>
+                     <tr>
+                      <th id="episodiosRowHdr9" scope="row">Episodio 8</th>
+                      <td headers="episodiosColHdr2 episodiosRowHdr9">Redención</td>
+                      <td headers="episodiosColHdr3 episodiosRowHdr9">27 de diciembre de 2019</td>
+                      <td headers="episodiosColHdr4 episodiosRowHdr9">Taika Waititi</td>
+                     </tr>
+                    </tbody>
+                   </table>
+            </article>
+            <article class="article__noticias " tabindex="4">
                 <h3>Noticias</h3>
-                <div class="noticias">
-                    <div class="n_principal">
+                <div class="noticias l-columnas-pc">
+                    <div class="noticia noticia__principal l-2col-pc">
                         <a href="#"><img src="img/noticia_principal.jpeg" alt="Noticia Disney plus" /></a>
                         <a href="#">
                             <h4>Disney + ya esta aqui</h4>
                         </a>
                     </div>
-                    <div class="secundarias">
-                        <div class="n_secundaria">
+                    <div class="secundarias l-2col-pc">
+                        <div class="noticia noticia__secundaria">
                             <a href="#"><img src="img/noticia1.jpeg" alt="Noticia curiosidads sobre mandalorian" /></a>
                             <div class="titulo">
                                 <a href="#">
@@ -103,14 +166,14 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="n_secundaria">
+                        <div class="noticia noticia__secundaria">
                             <a href="#"><img src="img/noticia2.jpeg" alt="Noticia trailer de mandalorian" /></a>
                             <div class="titulo"><a href="#">
                                     <h4>6 cosas que nos fascinan del ultimo trailer</h4>
                                 </a>
                             </div>
                         </div>
-                        <div class="n_secundaria">
+                        <div class="noticia noticia__secundaria">
                             <a href="#"><img src="img/noticia3.jpeg" alt="Noticia posters de mandalorian" /></a>
 
                             <div class="titulo"><a href="#">
@@ -121,7 +184,7 @@
                     </div>
                 </div>
             </article>
-            <article id="disney_plus" tabindex="4">
+            <article class="article__disney" tabindex="5    ">
                 <div>
                     <a href="#">
                         <img src="img/suscripcion.jpeg" alt="Suscripcion disney Plus">
@@ -135,42 +198,42 @@
                     <a href="#" class="button">Empezar a ver</a>
                 </div>
             </article>
-            <article id="galeria" tabindex="5">
+            <article class="article__galeria" tabindex="5">
                 <div id="principal">
                     <img src="img/personaje_05.jpeg" alt="">
                     <h3>Galeria de imagenes</h3>
                 </div>
-                <ul id="galeria_imagenes">
-                    <li><img src="img/personaje_02.jpeg" alt=""></li>
-                    <li><img src="img/personaje_03.jpeg" alt=""></li>
-                    <li><img src="img/personaje_04.jpeg" alt=""></li>
-                    <li><img src="img/personaje_01.jpeg" alt=""></li>
+                <ul class="l-cuadricula">
+                    <li class="l-2col-mv l-3col-pc"><img src="img/personaje_02.jpeg" alt=""></li>
+                    <li class="l-2col-mv l-3col-pc"><img src="img/personaje_03.jpeg" alt=""></li>
+                    <li class="l-2col-mv l-3col-pc"><img src="img/personaje_04.jpeg" alt=""></li>
+                    <li class="l-2col-mv l-3col-pc"><img src="img/personaje_01.jpeg" alt=""></li>
                 </ul>
             </article>
         </section>
     </main>
 
     <footer>
-        <div id="sociales">
+        <div class="footer__social">
             <a href="#" title="enlace a Facebook de Star Wars" class="fb">Facebook</a>
             <a href="#" title="enlace a Twitter de Star Wars" class="twitter">Twitter</a>
             <a href="#" title="enlace a Instagram de Star Wars" class="inst">Instagram</a>
         </div>
-        <div id="autor">
+        <div class="footer__autor">
             <address>
                 <img class="casco" src="img/mandalorian.svg" alt="" />
                 <span>Página creada por Daniel García</span>
                 <img class="casco" src="img/mandalorian.svg" alt="" />
             </address>
         </div>
-        <div id="licencia">
+        <div class="footer__info">
             <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
                     alt="Licencia de Creative Commons" style="border-width:0"
                     src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está bajo una <a
                 rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">licencia de Creative Commons
                 Reconocimiento-NoComercial-CompartirIgual 4.0 Internacional</a>
         </div>
-        <div id="accesibilidad">
+        <div class="footer__info">
             <a href="accesibilidad.html">Enlace a la página accesibilidad.html</a>
             <a href="https://www.w3.org/WAI/WCAG2AAA-Conformance"
                 title="Explanation of WCAG 2.0 Level Triple-A Conformance"><br/>

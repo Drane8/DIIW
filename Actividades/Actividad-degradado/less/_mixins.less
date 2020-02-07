@@ -1,0 +1,10 @@
+.sombra-caja(@color;@sombra;@rest...){
+  background-color: @color;
+  box-shadow: @sombra @rest;
+}
+.degradado-repetido(@degradado){
+  background: @degradado;
+}
+.degradado-repetido-multiple(@degradado; @rest...){
+  background: @degradado , @rest;
+}

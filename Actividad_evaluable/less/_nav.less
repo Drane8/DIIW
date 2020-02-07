@@ -1,5 +1,5 @@
 .header__nav {
-  border-top: 1px solid #333333;
+  border-top: 1px solid @color-borde;
 }
 .header__nav > ul {
   list-style-type: none;
@@ -8,22 +8,22 @@
 .header__nav > ul > li {
   display: inline-block;
   text-transform: uppercase;
-  border-left: 1px solid #333333;
+  border-left: 1px solid @color-borde;
   padding: 5px 20px;
 }
 
 .header__nav > ul > li > a {
   text-decoration: none;
-  color: #aaaaaa;
+  color: @color3;
   letter-spacing: 1px;
 }
 
 .header__nav > ul > li > a:hover {
-  color: #dddddd;
+  color: @color1;
 }
 
 .header__nav > ul > li:nth-child(4) {
-  border-right: 1px solid #333333;
+  border-right: 1px solid @color-borde;
 }
 
 .nav__pc,
@@ -40,7 +40,7 @@
     border-right: none;
   }
   .header__nav > ul > li:nth-child(5) {
-    border-right: 1px solid #333333;
+    border-right: 1px solid @color-borde;
   }
 }
 
@@ -52,6 +52,6 @@
     border-right: none;
   }
   .header__nav > ul > li:last-child {
-    border-right: 1px solid #333333;
+    border-right: 1px solid @color-borde;
   }
 }

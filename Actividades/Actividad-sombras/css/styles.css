@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.c1,
+.c2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 300px;
+  border-radius: 20px;
+}
+.c1 {
+  background-color: transparent;
+  box-shadow: inset 20px 20px 40px 0 rgba(0, 0, 255, 0.664), inset -20px -20px 40px 0 rgba(122, 10, 122, 0.733) ;
+}
+.c2 {
+  background-color: lightgray;
+  box-shadow: 1px 1px 10px 0 gray, -1px -1px 10px 0 gray ;
+}
+.cajas {
+  display: flex;
+  justify-content: space-around;
+}
+.texto,
+.cajas {
+  padding: 1rem;
+}
+.huevo {
+  width: 100px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-radius: 50%;
+}
+.a {
+  background-color: white;
+  box-shadow: -5px -5px 0px 0px gray ;
+}
+.b {
+  background-color: white;
+  box-shadow: -5px -10px 2px 0px gray ;
+}
+.c {
+  background-color: white;
+  box-shadow: inset 5px 8px 0px 0px gray ;
+}
+.d {
+  background-color: white;
+  box-shadow: -5px -5px 6px 2px gray ;
+}
+.e {
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px gray ;
+}
+.f {
+  background-color: white;
+  box-shadow: 0px 0px 5px 6px gray ;
+}
+.g {
+  background-color: white;
+  box-shadow: 2px 5px 2px 3px gray ;
+}
+.h {
+  background-color: white;
+  box-shadow: inset -3px -5px 10px 3px gray ;
+}
+.i {
+  background-color: white;
+  box-shadow: inset -3px -5px 0px 2px gray ;
+}
+.j {
+  background-color: white;
+  box-shadow: inset -3px -5px 8px 3px gray ;
+}
+.k {
+  background-color: white;
+  box-shadow: inset 0px -1px 4px 0px gray, inset 0px 1px 8px 2px gray ;
+}
+.l {
+  background-color: white;
+  box-shadow: inset 0px 0px 8px 1px gray ;
+}
+.t1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 8px #ff0000, -1px -1px 8px #ff0000;
+  padding-left: 0.2rem;
+}
+.t2 {
+  color: #000000;
+  text-shadow: -2px -2px 2px #ff0000, 0px -2px 2px #00cc00 0px 1px 2px #0033ff;
+  padding-left: 0.2rem;
+  font-weight: bolder;
+}
+.t3 {
+  color: #ffffff;
+  text-shadow: 0.7px 0.7px 0px #000000, ;
+  padding-left: 0.2rem;
+  background-color: lightgray;
+}
+.t4 {
+  color: #999999;
+  text-shadow: -0.5px -0.5px 0px #ffffff, 0.5px 0.5px 0.5px #000000;
+  padding-left: 0.2rem;
+  background-color: #999999;
+}
+.t5 {
+  color: #d7d7d7;
+  text-shadow: 0.5px 0.5px 0.5px #ffffff, -0.5px -0.5px 0.5px #191350;
+  padding-left: 0.2rem;
+  background-color: #d7d7d7;
+}

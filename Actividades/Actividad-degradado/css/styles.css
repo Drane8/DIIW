@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+article {
+  margin-bottom: 1rem;
+  color: white;
+}
+h2 {
+  margin-bottom: 1rem;
+}
+.m1 {
+  background-color: transparent;
+  box-shadow: inset 0px 20px 10px -5px black ;
+  background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0.356), rgba(0, 0, 0, 0.356) 15px, transparent 0, transparent 25px);
+}
+.m2 {
+  background-color: transparent;
+  box-shadow: inset 0px 20px 2px -5px red ;
+  background: repeating-linear-gradient(90deg, rgba(255, 0, 0, 0.356), rgba(255, 0, 0, 0.356) 15px, transparent 0, transparent 25px), repeating-linear-gradient(0deg, rgba(255, 0, 0, 0.356), rgba(255, 0, 0, 0.356) 15px, transparent 0, transparent 25px);
+}

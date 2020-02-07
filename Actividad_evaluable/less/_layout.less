@@ -1,7 +1,43 @@
-header{
+.l-sticky{
   position: sticky;
   width: 100%;
   top: 0;
   z-index: 200;
 }
 
+.l-cuadricula{
+  .flex-espaciado();
+}
+
+.l-2col-mv{
+  width:48%;
+}
+
+.l-1col-mv{
+  display: block;
+  width: 100%;
+}
+@media all and (min-width: @media-tb) {
+  .l-2col-tb{
+    width: 40%;
+  }
+  .l-fila-tb{
+    display: flex;
+  }
+}
+
+@media all and (min-width: @media-pc){
+  .l-3col-pc{
+    width: 32.2%;
+  }
+  .l-2col-pc{
+    width: 49%;
+  }
+  .l-columnas-pc{
+    .flex-espaciado();
+  }
+  .l-filas-pc{
+    .flex-espaciado();
+    flex-direction: column;
+  }
+}
