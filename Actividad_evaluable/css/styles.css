@@ -327,10 +327,12 @@ footer {
   color: #fb667a;
 }
 .article__episodios td:hover {
-  background-color: #fff842;
+  background-color: #1febfd;
   color: #403e10;
   font-weight: bold;
-  box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px, #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+  -webkit-box-shadow: #017782 -1px 1px #017782 -2px 2px #017782 -3px 3px #017782 -4px 4px #017782 -5px 5px #017782 -6px 6px;
+  -moz-box-shadow: #017782 -1px 1px #017782 -2px 2px #017782 -3px 3px #017782 -4px 4px #017782 -5px 5px #017782 -6px 6px;
+  box-shadow: #017782 -1px 1px #017782 -2px 2px #017782 -3px 3px #017782 -4px 4px #017782 -5px 5px #017782 -6px 6px;
   transform: translate3d(6px, -6px, 0);
   transition-delay: 0s;
   transition-duration: 0.4s;

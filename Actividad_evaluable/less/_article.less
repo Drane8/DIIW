@@ -57,9 +57,7 @@
 .article__episodios td {
   font-weight: normal;
   font-size: 1em;
-  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
-  -moz-box-shadow: 0 2px 2px -2px #0e1119;
-  box-shadow: 0 2px 2px -2px #0e1119;
+  .sombra-caja-simple(0, 2px, 2px, -2px, #0e1119);
 }
 
 .article__episodios {
@@ -87,9 +85,7 @@
     }
     &:hover {
       background-color: #464a52;
-      -webkit-box-shadow: 0 6px 6px -6px #0e1119;
-      -moz-box-shadow: 0 6px 6px -6px #0e1119;
-      box-shadow: 0 6px 6px -6px #0e1119;
+      .sombra-caja-simple(0, 6px, 6px, -6px, #0e1119);
     }
   }
   
@@ -102,12 +98,12 @@
       color: #fb667a;
     }
     &:hover {
-      background-color: #fff842;
+      background-color: @color7;
       color: #403e10;
       font-weight: bold;
     
-      box-shadow: #7f7c21 -1px 1px, #7f7c21 -2px 2px, #7f7c21 -3px 3px,
-        #7f7c21 -4px 4px, #7f7c21 -5px 5px, #7f7c21 -6px 6px;
+      .sombra-caja-multiple(@color8 -1px 1px; @color8 -2px 2px; @color8 -3px 3px;
+        @color8 -4px 4px; @color8 -5px 5px; @color8 -6px 6px);
       transform: translate3d(6px, -6px, 0);
     
       transition-delay: 0s;
