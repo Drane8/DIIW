@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+body {
+  text-align: center;
+}
+div {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+}
+.color:hover {
+  background-color: blue;
+  transition: background-color 2s;
+}
+.dcha:hover {
+  transform: translate(1000px, 0);
+  transition: all 2s;
+  transition-delay: 200ms;
+}
+.tpc:hover {
+  transform: scale(1.5) translate(-50px, 25px);
+  background-color: green;
+  transition: all 2s;
+  transition-delay: 200ms;
+}
+.pca:hover {
+  padding: 0.3rem;
+  background-color: yellow;
+  text-align: justify;
+  transition: all 2s;
+  transition-delay: 200ms;
+}
