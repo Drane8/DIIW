@@ -31,13 +31,13 @@
             </figure>
         </a>
         <div class="header__login">
-            <form method="GET" action="#">
+            <form method="GET" action="#" role="form">
                 <input type="text" placeholder="Nombre" name="nom" id="nom"><label for="nom" class="hidden">Nombre</label>
                 <input type="text" placeholder="Password" name="psw" id="psw"><label for="psw" class="hidden">Password</label>
                 <button type="submit">Login</button>
             </form>
         </div>
-        <nav class="header__nav">
+        <nav class="header__nav" role="navigation">
             <h2 class="hidden">Menu navegacion principal</h2>
             <ul>
                 <li><div class="sable"></div><a href="#">Noticias</a></li>
@@ -55,12 +55,12 @@
         </ul>
     </header>
 
-    <main>
-        <section>
+    <main role ="main">
+        <section role="region">
             <h2 class="hidden">The Mandalorian</h2>
-            <article class="article__sinopsis l-fila-tb" tabindex="0">
+            <article class="article__sinopsis l-fila-tb" tabindex="0" role="article">
                 <h3 class="hidden">Sinopsis</h3>
-                <img src="img/poster.jpeg" alt="" class="l-1col-mv l-2col-tb">
+                <img src="img/poster.jpeg" alt="" class="l-1col-mv l-2col-tb" longdesc="https://en.wikipedia.org/wiki/The_Mandalorian">
                 <div><h4>THE MANDALORIAN</h4>
                 <p>
                     El mandaloriano tiene lugar después de la caída del Imperio y antes de la aparición de la
@@ -68,7 +68,7 @@
                     autoridad de la Nueva República
                 </p></div>
             </article>
-            <article class="article__trailer" tabindex="2">
+            <article class="article__trailer" tabindex="2" role="article">
                 <h2 class="hidden">Trailer</h2>
                 <video width="640" height="266" poster="media/The_Mandalorian.jpeg" controls>
                     <source src="media/The_Mandalorian.mp4" type="video/mp4">
@@ -85,7 +85,7 @@
                     Tu navegador no soporta audio
                 </audio>
             </article>
-            <article class="article__episodios" tabindex="3">
+            <article class="article__episodios" tabindex="3" role="article">
                 <h3>Lista Episodios</h3>
                 <table summary="Lista episodios de The Mandalorian" id="episodios">
                     <thead>
@@ -148,7 +148,7 @@
                     </tbody>
                    </table>
             </article>
-            <article class="article__noticias " tabindex="4">
+            <article class="article__noticias " tabindex="4" role="article">
                 <h3>Noticias</h3>
                 <div class="noticias l-columnas-pc">
                     <div class="noticia noticia__principal l-2col-pc">
@@ -184,7 +184,7 @@
                     </div>
                 </div>
             </article>
-            <article class="article__disney" tabindex="5    ">
+            <article class="article__disney" tabindex="5" role="article">
                 <div>
                     <a href="#">
                         <img src="img/suscripcion.jpeg" alt="Suscripcion disney Plus">
@@ -198,7 +198,7 @@
                     <a href="#" class="button">Empezar a ver</a>
                 </div>
             </article>
-            <article class="article__galeria" tabindex="5">
+            <article class="article__galeria" tabindex="5" role="article">
                 <div id="principal">
                     <img src="img/personaje_05.jpeg" alt="">
                     <h3>Galeria de imagenes</h3>
@@ -213,7 +213,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="footer__social">
             <a href="#" title="enlace a Facebook de Star Wars" class="fb">Facebook</a>
             <a href="#" title="enlace a Twitter de Star Wars" class="twitter">Twitter</a>

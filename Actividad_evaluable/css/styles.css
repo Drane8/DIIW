@@ -204,22 +204,28 @@ footer {
 .header__nav > ul > li > a:hover {
   color: #DDDDDD;
   border-right: 1px solid #87dc5a;
+  border-left: 1px solid #87dc5a;
   background: repeating-linear-gradient(#87dc5a 0%, transparent 30%, transparent 50%, transparent 70%, #87dc5a 100%);
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 20px;
+  border-radius: 20px;
   animation-name: sable;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 @keyframes sable {
   from {
-    box-shadow: 0 0 10px #7ec855;
+    -webkit-box-shadow: 0px 0px 10px 0px #7ec855;
+    -moz-box-shadow: 0px 0px 10px 0px #7ec855;
+    box-shadow: 0px 0px 10px 0px #7ec855;
   }
   50% {
-    box-shadow: 0 0 16px #7ec855;
+    -webkit-box-shadow: 0 0 20px 0px #7ec855;
+    -moz-box-shadow: 0 0 20px 0px #7ec855;
+    box-shadow: 0 0 20px 0px #7ec855;
   }
   to {
-    box-shadow: 0 0 10px #7ec855;
+    -webkit-box-shadow: 0 0 10px 0px #7ec855;
+    -moz-box-shadow: 0 0 10px 0px #7ec855;
+    box-shadow: 0 0 10px 0px #7ec855;
   }
 }
 .header__nav > ul > li:nth-child(4) {
