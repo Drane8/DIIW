@@ -23,11 +23,11 @@
 }
 .c1 {
   background-color: transparent;
-  box-shadow: inset 20px 20px 40px 0 rgba(0, 0, 255, 0.664), inset -20px -20px 40px 0 rgba(122, 10, 122, 0.733) ;
+  box-shadow: inset 20px 20px 40px 0 rgba(0, 0, 255, 0.664), inset -20px -20px 40px 0 rgba(122, 10, 122, 0.733), ;
 }
 .c2 {
   background-color: lightgray;
-  box-shadow: 1px 1px 10px 0 gray, -1px -1px 10px 0 gray ;
+  box-shadow: 1px 1px 10px 0 gray, -1px -1px 10px 0 gray, ;
 }
 .cajas {
   display: flex;
@@ -48,51 +48,51 @@
 }
 .a {
   background-color: white;
-  box-shadow: -5px -5px 0px 0px gray ;
+  box-shadow: -5px -5px 0px 0px gray, ;
 }
 .b {
   background-color: white;
-  box-shadow: -5px -10px 2px 0px gray ;
+  box-shadow: -5px -10px 2px 0px gray, ;
 }
 .c {
   background-color: white;
-  box-shadow: inset 5px 8px 0px 0px gray ;
+  box-shadow: inset 5px 8px 0px 0px gray, ;
 }
 .d {
   background-color: white;
-  box-shadow: -5px -5px 6px 2px gray ;
+  box-shadow: -5px -5px 6px 2px gray, ;
 }
 .e {
   background-color: white;
-  box-shadow: 0px 0px 5px 2px gray ;
+  box-shadow: 0px 0px 5px 2px gray, ;
 }
 .f {
   background-color: white;
-  box-shadow: 0px 0px 5px 6px gray ;
+  box-shadow: 0px 0px 5px 6px gray, ;
 }
 .g {
   background-color: white;
-  box-shadow: 2px 5px 2px 3px gray ;
+  box-shadow: 2px 5px 2px 3px gray, ;
 }
 .h {
   background-color: white;
-  box-shadow: inset -3px -5px 10px 3px gray ;
+  box-shadow: inset -3px -5px 10px 3px gray, ;
 }
 .i {
   background-color: white;
-  box-shadow: inset -3px -5px 0px 2px gray ;
+  box-shadow: inset -3px -5px 0px 2px gray, ;
 }
 .j {
   background-color: white;
-  box-shadow: inset -3px -5px 8px 3px gray ;
+  box-shadow: inset -3px -5px 8px 3px gray, ;
 }
 .k {
   background-color: white;
-  box-shadow: inset 0px -1px 4px 0px gray, inset 0px 1px 8px 2px gray ;
+  box-shadow: inset 0px -1px 4px 0px gray, inset 0px 1px 8px 2px gray, ;
 }
 .l {
   background-color: white;
-  box-shadow: inset 0px 0px 8px 1px gray ;
+  box-shadow: inset 0px 0px 8px 1px gray, ;
 }
 .t1 {
   color: #ffffff;

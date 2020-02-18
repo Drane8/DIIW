@@ -203,6 +203,24 @@ footer {
 }
 .header__nav > ul > li > a:hover {
   color: #DDDDDD;
+  border-right: 1px solid #87dc5a;
+  background: repeating-linear-gradient(#87dc5a 0%, transparent 30%, transparent 50%, transparent 70%, #87dc5a 100%);
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  animation-name: sable;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes sable {
+  from {
+    box-shadow: 0 0 10px #7ec855;
+  }
+  50% {
+    box-shadow: 0 0 16px #7ec855;
+  }
+  to {
+    box-shadow: 0 0 10px #7ec855;
+  }
 }
 .header__nav > ul > li:nth-child(4) {
   border-right: 1px solid #2f2f2f;
@@ -322,6 +340,7 @@ footer {
 }
 .article__episodios th {
   background-color: #106cbf;
+  text-shadow: -4px 4px #0c5190;
 }
 .article__episodios td:first-child {
   color: #fb667a;
@@ -330,9 +349,9 @@ footer {
   background-color: #1febfd;
   color: #403e10;
   font-weight: bold;
-  -webkit-box-shadow: #017782 -1px 1px #017782 -2px 2px #017782 -3px 3px #017782 -4px 4px #017782 -5px 5px #017782 -6px 6px;
-  -moz-box-shadow: #017782 -1px 1px #017782 -2px 2px #017782 -3px 3px #017782 -4px 4px #017782 -5px 5px #017782 -6px 6px;
-  box-shadow: #017782 -1px 1px #017782 -2px 2px #017782 -3px 3px #017782 -4px 4px #017782 -5px 5px #017782 -6px 6px;
+  -webkit-box-shadow: #017782 -1px 1px, #017782 -2px 2px, #017782 -3px 3px, #017782 -4px 4px, #017782 -5px 5px, #017782 -6px 6px;
+  -moz-box-shadow: #017782 -1px 1px, #017782 -2px 2px, #017782 -3px 3px, #017782 -4px 4px, #017782 -5px 5px, #017782 -6px 6px;
+  box-shadow: #017782 -1px 1px, #017782 -2px 2px, #017782 -3px 3px, #017782 -4px 4px, #017782 -5px 5px, #017782 -6px 6px;
   transform: translate3d(6px, -6px, 0);
   transition-delay: 0s;
   transition-duration: 0.4s;
@@ -415,7 +434,7 @@ footer {
 .article__disney h4 {
   font-style: italic;
   word-spacing: 2px;
-  margin-bottom: 2rem;
+  margin-bottom: calc(1rem * 2);
 }
 .article__disney .button {
   display: block;

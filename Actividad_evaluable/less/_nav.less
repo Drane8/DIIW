@@ -20,6 +20,32 @@
 
 .header__nav > ul > li > a:hover {
   color: @color1;
+  //sable laser
+  border-right: 1px solid #87dc5a;
+  background: repeating-linear-gradient(
+    rgb(135, 220, 90) 0%,
+    transparent 30%,
+    transparent 50%,
+    transparent 70%,
+    rgb(135, 220, 90) 100%
+  );
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  animation-name: sable;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes sable {
+  from {
+    box-shadow: 0 0 10px #7ec855;
+  }
+  50% {
+    box-shadow: 0 0 16px #7ec855;
+  }
+  to {
+    box-shadow: 0 0 10px #7ec855;
+  }
 }
 
 .header__nav > ul > li:nth-child(4) {

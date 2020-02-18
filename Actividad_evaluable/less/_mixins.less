@@ -37,8 +37,8 @@
   box-shadow: @arguments;
 }
 //crea una o más sombras para cajas
- .sombra-caja-multiple(@rest...){
-  -webkit-box-shadow: @rest;
-  -moz-box-shadow: @rest;
-  box-shadow: @rest;
+ .sombra-caja-multiple(@sombra; @rest...){
+  -webkit-box-shadow: @sombra, @rest;
+  -moz-box-shadow:@sombra,  @rest;
+  box-shadow: @sombra, @rest;
 }
